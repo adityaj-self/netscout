@@ -3,25 +3,30 @@
 import sys
 import os
 import shutil
+from ConfigParser import ConfigParser
+import logging
 
 import p2p
 
 class netScout:
     def __init__(self):
-        print 'Setting log folders'
-        self.isNoop=False
-        self.msg=""
+        configObj=ConfigParser()
+        configObj.readfp(open('config'))
         self.DATA_FOLDER='netscoutDataLogs'
         self.P2P_FOLDER=self.DATA_FOLDER+'/'+'p2p'
         self.HTTP_FOLDER=self.DATA_FOLDER+'/'+'http'
-
+        configObj.set('NETSCOUT','DATA_FOLDER',self.DATA_FOLDER)
+        self.LOG_FILE=configObj.get('NETSCOUT','LOG_FILE')
+        self.LOG_LEVEL=configObj.getint('NETSCOUT','LOG_LEVEL')
+        self.isNoop=False
+        self.msg=""
 
     def setNoop(self,msg):
         self.isNoop=True
         self.msg=msg
         
     def processArgs(self):
-        print 'Processing arguments'
+        print 'LOG: Processing arguments'
         """
         Scan the input to ensure netscout is invoked with 
         proper arguments
@@ -64,7 +69,8 @@ class netScout:
         os.mkdir(self.DATA_FOLDER)
         os.mkdir(self.HTTP_FOLDER)
         os.mkdir(self.P2P_FOLDER)
-
+        logging.basicConfig(filename=self.LOG_FILE,format="%(levelname)s %(asctime)s %(message)s",level=logging.DEBUG)
+ 
     def helpInfo(self):
         print 'nescout version 1.0'
         print 'Usage: netscout -i <interface>'
