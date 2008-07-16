@@ -26,7 +26,7 @@ class netScout:
         self.msg=msg
         
     def processArgs(self):
-        print 'LOG: Processing arguments'
+        print 'Processing arguments'
         """
         Scan the input to ensure netscout is invoked with 
         proper arguments
@@ -78,7 +78,6 @@ class netScout:
     
     
 def passiveAnalysis():
-    print 'Starting analysis'
     netscout=netScout()
     netscout.processArgs()
     if (netscout.isNoop):
@@ -90,5 +89,6 @@ def passiveAnalysis():
     p2pmodel=p2p.P2PModel(netscout.interface,netscout.P2P_FOLDER)
     p2pmodel.getHubInfo()
     p2pmodel.printP2PAnalysis()
+    print 'End P2P analysis'
 
 passiveAnalysis()

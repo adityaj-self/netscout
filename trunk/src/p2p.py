@@ -8,7 +8,7 @@ from host import Host
 
 class P2PModel:
     def __init__(self,interface,datafolder):
-        print 'Setting up P2P configuration parameters'
+        logging.debug('Setting up P2P configuration parameters')
         self.interface=interface
         self.datafolder=datafolder
         configObj=ConfigParser()
@@ -69,8 +69,8 @@ class P2PModel:
     def getHubData(self):
         for i in range(len(self.hubHostList)):
             hostIP=self.hubHostList[i].ipAddr
-            print 'Obtaining LDAP IDs: '+hostIP
-            print 'Scanning HTTP requests for : '+hostIP
+            logging.debug('Obtaining LDAP IDs: '+hostIP)
+            logging.debug('Scanning HTTP requests for : '+hostIP)
             os.system("touch "+self.UID_FILE_TSHARK)
             os.system("tcpdump -s0 -i "+self.interface+" 'host "+hostIP\
                      +" and tcp dst port 80' -c "+self.UID_CNT+" -w "+self.UID_FILE)
@@ -84,29 +84,29 @@ class P2PModel:
             self.hubHostList[i].clients=self.identifyClients(hostIP,self.hubHostList[i].port)
 
     def identifyClients(self,hubIP,hostPort):
-        print 'Scanning for P2P clients'
-        print 'Scanning for P2P clients for HUB: '+hubIP
+        logging.debug('Scanning for P2P clients')
+        logging.debug('Scanning for P2P clients for HUB: '+hubIP)
         self.hubIP=hubIP
         os.system("ngrep -q -i -d "+self.interface+" '' -W byline 'host "+hubIP+" and tcp src port "+hostPort+"' -n "+self.CLT_CNT\
                  +" | grep \"[0-9].[0-9].[0-9].[0-9] [ ->]\" | awk -F\" \" '{print $4}' | awk -F\":\" '{print $1}' |sort -u > "+self.CLT_FILE)
         clientHostList=self.fileToHost(self.CLT_FILE, self.CLT_NCOL)
-        print 'Getting LDAP IDs of users acting as P2P Clients'
+        logging.debug('Getting LDAP IDs of users acting as P2P Clients')
         for i in range(len(clientHostList)):
             hostIP=clientHostList[i].ipAddr
-            print 'Getting LDAP IDs of P2P Client: '+hostIP
+            logging.debug('Getting LDAP IDs of P2P Client: '+hostIP)
             os.system("tcpdump -s0 -i "+self.interface+" 'host "+hostIP\
                      +" and tcp dst port 80' -c "+self.CLT_LDAP_CNT+" -w "+self.CLT_LDAP_FILE)
             os.system("tshark -r "+self.CLT_LDAP_FILE+" -T fields -e http.authbasic -R \"http.request && http.authbasic\" | cut -f1 -d ':' > "+self.UID_FILE_TSHARK)
             fuid=open(self.UID_FILE_TSHARK,'r')
             clientHostList[i].loginLDAP=fuid.readline()
             fuid.close()
-            print 'id: '+clientHostList[i].loginLDAP
+            logging.debug('id: '+clientHostList[i].loginLDAP)
             clientHostList[i].p2pActive=True
             clientHostList[i].p2pType="Client"
         return clientHostList
     
     def getHubFiles(self,hostIP):
-        print 'Getting File List for HUB: '+hostIP
+        logging.debug('Getting File List for HUB: '+hostIP)
         os.system("ngrep -i -q -R -d "+self.interface+" -W byline -n "+self.FILE_CNT+" -w '\$SR' 'src host "+hostIP+"' > "+self.SR_DUMP)
         allFileData = open(self.SR_DUMP,'r').read()
         p=re.compile('\|\$SR [0-9A-Z_]*', re.DOTALL | re.IGNORECASE)
@@ -115,9 +115,7 @@ class P2PModel:
         markend=q.sub(' FILEEND',markstart)
         fileList=re.findall('FILESTART.*?FILEEND', markend, re.DOTALL | re.IGNORECASE)
         videoList=[]
-        print '\n ---------------------------------------------------\n'
-        print '\tSearching for video files hosted by HUB: '+hostIP+'\n'
-        print '\n ---------------------------------------------------\n'
+        logging.debug('\tSearching for video files hosted by HUB: '+hostIP+'\n')
         i=0
         for j in range(len(fileList)):
              fromInd=fileList[j].rfind('\\')
@@ -139,7 +137,7 @@ class P2PModel:
              elif ('.mov' in fileList[j]):
                  toInd=fileList[j].rfind('.mov')    
                  toInd=toInd+4
-             elif ('.mov' in fileList[j]):
+             elif ('.rm' in fileList[j]):
                  toInd=fileList[j].rfind('.rm')    
                  toInd=toInd+3
             
@@ -150,23 +148,25 @@ class P2PModel:
 
     def printP2PAnalysis(self):
         hubs=self.hubHostList
-        print 'P2P Analysis Stored at: '+self.P2P_ANALYSIS
-        p2pAnalysisData='\t\tP2P Analysis Results: '
+        logging.debug('P2P Analysis Stored at: '+self.P2P_ANALYSIS)
+        p2pAnalysisData='\t\tP2P Analysis Results: \n'
         p2pAnalysisData+='\t\t--------------------\n'
+        p2pOutput=open(self.P2P_ANALYSIS,'w')
         for i in range(len(hubs)):
-            p2pAnalysisData+='\n --------------INFO FOR HUB : '+hubs[i].ipAddr+'------------------------------------\n'
-            p2pAnalysisData+='HUB IP'.rjust(16)+'PORT'.rjust(6)+'LDAP ID'.rjust(10)
-            p2pAnalysisData+=hubs[i].ipAddr.rjust(16)+hubs[i].port.rjust(6)+hubs[i].loginLDAP.rjust(10)
-            p2pAnalysisData+='Clients connected to the HUB'
+            p2pAnalysisData+='\n --------------INFO FOR HUB : '+hubs[i].ipAddr+'--------------------------\n\n'
+            p2pAnalysisData+='HUB IP'.rjust(16)+'PORT'.rjust(6)+'LDAP ID'.rjust(10)+'\n'
+            p2pAnalysisData+=hubs[i].ipAddr.rjust(16)+hubs[i].port.rjust(6)+hubs[i].loginLDAP.rjust(10)+'\n'
+            p2pAnalysisData+='\nClients connected to the HUB'+'\n'
             clients=hubs[i].clients
             for i in range(len(clients)):
-                p2pAnalysisData+='Client IP'.rjust(16)+'LDAP ID'.rjust(10)
-                p2pAnalysisData+=clients[i].ipAddr.rjust(16)+clients[i].loginLDAP.rjust(10)
-            p2pAnalysisData+='\tVideo files hosted by HUB: \n'
+                p2pAnalysisData+='Client IP'.rjust(16)+'LDAP ID'.rjust(10)+'\n'
+                p2pAnalysisData+=clients[i].ipAddr.rjust(16)+clients[i].loginLDAP.rjust(10)+'\n'
+            p2pAnalysisData+='\nVideo files hosted by HUB: \n\n'
             fileList=hubs[i].fileList
             for k in range(len(fileList)):
-                print fileList[k]
-            print '\n --------------HUB INFO END-------------------------------------\n'
-        p2pOutput=open(self.P2P_ANALYSIS,'w')
-        p2pOuptput.write(p2pAnalysisData)
-        p2pOuptput.close()
+                logging.debug(fileList[k]+'\n')
+                p2pAnalysisData+=fileList[k]+'\n'
+            logging.debug('\n --------------HUB INFO END-------------------------------------\n')
+            p2pAnalysisData+='\n --------------HUB INFO END-------------------------------------\n'
+        p2pOutput.write(p2pAnalysisData)
+        p2pOutput.close()

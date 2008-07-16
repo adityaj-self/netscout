@@ -6,7 +6,23 @@ LOG_LEVEL=10
 
 [P2P]
 # Number of MyINFO packets to look for
-INFO_CNT=3
+INFO_CNT=15
+
+#Number of packets looked for search results(SR)
+FILE_CNT='10'
+
+#Number of Packets to be looked for getting clients
+CLT_CNT='2'
+
+#Number of userid Packets to look for
+UID_CNT='1'
+
+#Number pf packets to be looked at for getting client LDAP 
+CLT_LDAP_CNT='6'
+
+#Type of file extensions to look for
+
+FILE_EXT=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma
 
 # Set file to hold MyINFO packets
 INFO_DUMP=%(P2P_FOLDER)s/myinfo
@@ -17,17 +33,12 @@ HUB_COLS=%(P2P_FOLDER)s/hub_cols
 # Specify the number of columns captured for each HUB 
 HUB_NCOL=2
 
-#Number of packets looked for search results(SR)
-FILE_CNT='10'
-
 #File to hold the SR packets
 SR_DUMP=%(P2P_FOLDER)s/searchresult
 
 #SR results in column format
 SR_COLS=%(P2P_FOLDER)s/myinfo_cols
 
-#Number of userid Packets to look for
-UID_CNT='1'
 
 #File to hold libpcap data
 UID_FILE=%(P2P_FOLDER)s/uid
@@ -35,17 +46,11 @@ UID_FILE=%(P2P_FOLDER)s/uid
 #Userid extracted via tshark are stored here
 UID_FILE_TSHARK=%(P2P_FOLDER)s/uid_tshark
 
-#Number of Packets to be looked for getting clients
-CLT_CNT='2'
-
 #Client file valid columns
 CLT_NCOL=1
 
 #File where client data gets stored
 CLT_FILE=%(P2P_FOLDER)s/client
-
-#Number pf packets to be looked at for getting client LDAP 
-CLT_LDAP_CNT='6'
 
 #Storing client data
 CLT_LDAP_FILE=%(P2P_FOLDER)s/client_ldap
