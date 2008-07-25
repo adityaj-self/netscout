@@ -5,20 +5,20 @@ LOG_LEVEL=10
 
 
 [P2P]
-# Number of MyINFO packets to look for
-INFO_CNT=15
+# Number of MyINFO packets to look for (ie number of HUBS to locate)
+INFO_CNT=20
 
-#Number of packets looked for search results(SR)
-FILE_CNT='10'
+#NUmber of Search Results packets to look for (to get file list)
+FILE_CNT=6
 
-#Number of Packets to be looked for getting clients
-CLT_CNT='2'
+#Number of HUB-Client Packets to look for
+CLT_CNT=10
 
-#Number of userid Packets to look for
-UID_CNT='1'
+#Number of LDAP Packets at HUB to look for
+UID_CNT=5
 
-#Number pf packets to be looked at for getting client LDAP 
-CLT_LDAP_CNT='6'
+#Number of packets to be looked at for getting client LDAP 
+CLT_LDAP_CNT=10
 
 #Type of file extensions to look for
 
