@@ -1,94 +1,121 @@
 #!/usr/bin/env python
 
+"""
+Author: Aditya Joshi
+"""
+
 import sys
 import os
 import shutil
 from ConfigParser import ConfigParser
 import logging
+import sqlite3
 
-import p2p
+from utils import *
 
-class netScout:
-    def __init__(self):
-        configObj=ConfigParser()
-        configObj.readfp(open('config'))
-        self.DATA_FOLDER='netscoutDataLogs'
-        self.P2P_FOLDER=self.DATA_FOLDER+'/'+'p2p'
-        self.HTTP_FOLDER=self.DATA_FOLDER+'/'+'http'
-        configObj.set('NETSCOUT','DATA_FOLDER',self.DATA_FOLDER)
-        self.LOG_FILE=configObj.get('NETSCOUT','LOG_FILE')
-        self.LOG_LEVEL=configObj.getint('NETSCOUT','LOG_LEVEL')
-        self.isNoop=False
-        self.msg=""
-
-    def setNoop(self,msg):
-        self.isNoop=True
-        self.msg=msg
-        
-    def processArgs(self):
-        print 'Processing arguments'
-        """
-        Scan the input to ensure netscout is invoked with 
-        proper arguments
-        """
-        paramList=sys.argv
-    
-        """
-            For options that do not need any operation set noop and messgae
-        """
-        if ("-h" in paramList):
-            self.setNoop("")
-            return 
-        
-        """
-            Ensure that the mandatory parameter '-i' is specfied
-        """
-        
-        if("-i" in paramList):
-            interfaceInd=paramList.index("-i")+1
-            try:
-                interface=paramList[interfaceInd]
-            except:
-                self.setNoop("\n---ERROR: NO INTERFACE VALUE SPECIFIED---")
-                return
-            self.datainput="interface"
-            self.interface=interface
-        else:
-            self.setNoop("\n---ERROR: INTERFACE '-i' is MANDATORY---")
-            return
-
-    def initFiles(self):
-        """
-        If directory with the same name as the log folder is found, delete it and recreate
-        """
-        try:
-            dirstat=os.stat(self.DATA_FOLDER)
-            shutil.rmtree(self.DATA_FOLDER)
-        except:
-            print 'Creating log directories'
-        os.mkdir(self.DATA_FOLDER)
-        os.mkdir(self.HTTP_FOLDER)
-        os.mkdir(self.P2P_FOLDER)
-        logging.basicConfig(filename=self.LOG_FILE,format="%(levelname)s %(asctime)s %(message)s",level=logging.DEBUG)
  
-    def helpInfo(self):
-        print 'nescout version 1.0'
-        print 'Usage: netscout -i <interface>'
-        print 'Ensure you are root!'
+def createDirStruct():
+    """
+    Create the directory struccture for holding network dumps. 
+    A directory of the same name (if any) is deleted and recreated.
+    """
+    try:
+        dirstat=os.stat(getCfg('dataDir'))
+        shutil.rmtree(getCfg('dataDir'))
+    except:
+        logging.info('Creating log directories')
+    os.mkdir(getCfg('dataDir'))
+    os.mkdir(getCfg('p2pDir'))
+    os.mkdir(getCfg('httpDir')) 
     
-    
-def passiveAnalysis():
-    netscout=netScout()
-    netscout.processArgs()
-    if (netscout.isNoop):
-        print netscout.msg
-        netscout.helpInfo()
-        sys.exit(0)
-    netscout.initFiles()
-    print 'Initiating p2p analysis'
+def helpInfo():
+    logging.info('nescout version 1.0')
+    logging.info('Usage: netscout [-i|-r] <interface> [-reset] ')
+    logging.info('Ensure you are root!')
+
+def passiveAnalysis(conn):
     p2pmodel=p2p.P2PModel(netscout.interface,netscout.P2P_FOLDER)
     p2pmodel.getHubInfo()
     p2pmodel.printP2PAnalysis()
-    print 'End P2P analysis'
 
-passiveAnalysis()
+def processArgs():
+    """
+    Scan the input to ensure netscout is invoked with proper arguments
+    """
+    paramList=sys.argv
+    if ("-v" in paramList):
+        """
+        In addtion the file logging, INFo and above messages will be logged to stdout
+        """
+        console = logging.StreamHandler()
+        console.setLevel(logging.INFO)
+        formatter = logging.Formatter('%(levelname)-8s: %(message)s')
+        console.setFormatter(formatter)
+        logging.getLogger('').addHandler(console)
+        logging.info('Screen logging on')
+        
+    if ("-h" in paramList):
+        helpInfo()
+        sys.exit() 
+        
+    if ("-reset" in paramList):
+        logging.warning("Resetting database! All data and configuration will be lost!")
+        initDB()
+
+    """
+        Ensure that the mandatory parameter '-i' or '-r' is specfied
+    """ 
+    if (not("-i" in paramList or "-r" in paramList)):
+        logging.error("\n---ERROR: Either INTERFACE '-i' or REPORT '-r' is MANDATORY---")
+        sys.exit()
+    
+    if("-i" in paramList):
+        interfaceInd=paramList.index("-i")+1
+        interface=""
+        try:
+            interface=paramList[interfaceInd]
+        except:
+            logging.error("\n---ERROR: NO INTERFACE VALUE SPECIFIED---")
+            sys.exit()
+        logging.info("Netscout: Passive mode")
+        utils.setConfigParam("interface", interface)
+    else:  
+        logging.info("Netscout: Report mode")
+        report()
+  
+def report():
+    conn = sqlite3.connect(utils.getCfg('nsDB'))
+    conn.close()
+    
+
+def initDB():
+    """
+        Initialize database
+    """
+    conn = connectDB()
+    schemaFile = open(getCfg('nsSchema'));
+    conn.executescript(schemaFile.read())
+    conn.commit()
+    logging.info('Database reset successfully')
+    schemaFile.close()
+    conn.close()
+
+def netscout():
+    """
+    Main thread of execution
+    """
+    logging.basicConfig(filename='netscout.log',format="%(levelname)-8s %(asctime)s \
+    Line %(lineno)-5d: %(message)s",level=logging.DEBUG)
+    logging.info('==========Initiating netscout logging==========')
+    processArgs()
+    readConfig()
+    createDirStruct()
+    #p2p.p2pModel(conn)
+    #p2pmodel=p2p.P2PModel(netscout.interface,netscout.P2P_FOLDER)
+    #p2pmodel.getHubInfo()
+    #p2pmodel.printP2PAnalysis()
+
+"""
+Invoke the main thread.
+"""
+netscout()

@@ -1,60 +1,113 @@
+## The netscout config file contains parameters to fine tune capture. 
+## A double '#' is for lines which offer explaination and single-'#' for parameters disabled by default.
+## Lines encolsed in '#' signify start of a logical section
+## The file structure is param=value. Please do not add string enclosures (like ' or ") unless specified
+## Always retain the [NETSCOUT] section
+
+#########################
+# NETSCOUT basic params #
+#########################
+
 [NETSCOUT]
 
-LOG_FILE=%(DATA_FOLDER)s/netscout.log
-LOG_LEVEL=10
+## Folder to hold data
+dataDir=netdata
+
+## P2P data folder
+p2pDir=%(dataDir)s/p2p
+
+## HTTP data folder
+httpDir=%(dataDir)s/http
+
+## The name of the SQLite DB file
+nsDB=netscout.db
+
+## The relative location of the db schema file
+nsSchema=dbSchema.sql
+
+##############################
+# NETSCOUT runtime behaviour #
+##############################
+
+## You can control the netscout behaviour by selecting the kind of operations you
+## want to be performed. 
+
+#################
+#HTTP(S) Proxies#
+#################
+
+## Set to true if network access (HTTP,HTTPS) is via proxy server, else comment out
+proxy=true
+
+## Enter the fully qualified name or IP address of the proxy, else comment out
+proxyHost=netmon.iitb.ac.in
+
+## Set to true if you use password based authentication for the proxy access
+proxyAuth=true
 
 
-[P2P]
-# Number of MyINFO packets to look for (ie number of HUBS to locate)
-INFO_CNT=20
 
-#NUmber of Search Results packets to look for (to get file list)
-FILE_CNT=6
-
-#Number of HUB-Client Packets to look for
-CLT_CNT=10
-
-#Number of LDAP Packets at HUB to look for
-UID_CNT=5
-
-#Number of packets to be looked at for getting client LDAP 
-CLT_LDAP_CNT=10
-
-#Type of file extensions to look for
-
-FILE_EXT=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma
-
-# Set file to hold MyINFO packets
-INFO_DUMP=%(P2P_FOLDER)s/myinfo
-
-# File to hold HUB data in column format
-HUB_COLS=%(P2P_FOLDER)s/hub_cols
-
-# Specify the number of columns captured for each HUB 
-HUB_NCOL=2
-
-#File to hold the SR packets
-SR_DUMP=%(P2P_FOLDER)s/searchresult
-
-#SR results in column format
-SR_COLS=%(P2P_FOLDER)s/myinfo_cols
+##################################################
+# DC++ P2P (Unencrypted) specific configuration #
+##################################################
 
 
-#File to hold libpcap data
-UID_FILE=%(P2P_FOLDER)s/uid
+## Number of MyINFO packets to look for (ie number of HUBS to locate)
+myinfo=20
 
-#Userid extracted via tshark are stored here
-UID_FILE_TSHARK=%(P2P_FOLDER)s/uid_tshark
+## Number of Search Results packets to look for (to get file list)
+sr=6
 
-#Client file valid columns
-CLT_NCOL=1
+## Number of HUB-Client Packets to look for
+hubClient=10
 
-#File where client data gets stored
-CLT_FILE=%(P2P_FOLDER)s/client
+## Number of LDAP Packets at HUB to look for
+ldapHUB=5
 
-#Storing client data
-CLT_LDAP_FILE=%(P2P_FOLDER)s/client_ldap
+## Number of packets to be looked at for getting client LDAP 
+ldapClient=5
 
-#Final analysis results
-P2P_ANALYSIS=%(P2P_FOLDER)s/p2p_analysis_results
+## Type of file extensions to look for
+
+ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma
+
+###########################
+#Dump locations and format#
+###########################
+
+## The information below is for specifying n/w dump locations and format(columns per file) in which the data is dumped.
+## Unless you need to change file names/locations and have done any code changes to netscout, you are advised to leave
+## the below data untouched.
+
+
+## Set file to hold MyINFO packets
+myinfoDump=%(p2pDir)s/myinfo
+
+## File to hold HUB data in column format
+hubColFile=%(p2pDir)s/hub_cols
+
+## Specify the number of columns captured for each HUB 
+hubNCol=2
+
+## File to hold the SR (search result) packets
+srDump=%(p2pDir)s/searchresult
+
+## SR results in column format
+srColFile=%(p2pDir)s/sr_cols
+
+## File to hold proxy auth libpcap data
+uidFile=%(p2pDir)s/uid
+
+## Userid extracted via tshark are stored here
+uidTshark=%(p2pDir)s/uid_tshark
+
+## Client file valid columns
+clientNCol=1
+
+## File where client data gets stored
+clientFile=%(p2pDir)s/client
+
+## Storing client proxy auth data
+clientLDAPFile=%(p2pDir)s/client_ldap
+
 
