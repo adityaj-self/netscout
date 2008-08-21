@@ -1,0 +1,31 @@
+.\" The netscout man page
+.\" Contact aditya.joshi.2000@gmail.com to correct errors or omissions. 
+.TH netscout 8 "21 August 2008" "1.0" "netscout man page"
+.SH NAME
+netscout \- a adaptive network traffic analyzer
+.SH SYNOPSIS
+.\" Syntax goes here. 
+.B man sample
+.SH EXAMPLES
+man pages will often contain examples following the 
+.B SYNOPSIS
+.SH DESCRIPTION
+.B sample
+is a sample man page. 
+.SH OPTIONS
+The sample man page is not a program, and does not take any options.
+.SH FILES
+.P 
+.I /usr/share/man/man1/sample.1.gz
+.SH SEE ALSO
+.BR tcpdump (8), 
+.BR tshark (1),
+.BR ngrep (8),
+.BR sqlite (1),
+.BR python (1)
+.SH BUGS
+Too many to list! JK!! :p 
+.SH AUTHOR
+.nf
+Aditya Joshi (aditya.joshi.2000@gmail.com)
+.fi
