@@ -17,7 +17,7 @@ def getCfg(param):
     """
     Get value ofspecified param
     """
-    if (param in cfg):
+    if (cfg.has_key(param)):
         return cfg[param]
     else:
         logging.warning("Parameter "+param+" not found")
@@ -34,12 +34,8 @@ def readConfig():
     Read the config file contents
     """
     parser = ConfigParser.ConfigParser()
+    parser.optionxform = str
     parser.readfp(open('config'))
     for x in parser.sections():
-        print x
-        print parser.options(x)
-        print 'hello'
         for y in parser.items(x):
-            print y
             cfg[y[0]] = y[1]
-    print cfg
