@@ -36,6 +36,9 @@ nsSchema=dbSchema.sql
 #HTTP(S) Proxies#
 #################
 
+## Set to true if you want to check for DC++ p2p traffic
+p2pMode=true
+
 ## Set to true if network access (HTTP,HTTPS) is via proxy server, else comment out
 proxy=true
 
