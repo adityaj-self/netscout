@@ -17,29 +17,20 @@ def createDirStruct():
     Create the directory struccture for holding network dumps. 
     A directory of the same name (if any) is deleted and recreated.
     """
-    try:
-        dirstat=os.stat(utils.getCfg('dataDir'))
-        shutil.rmtree(utils.getCfg('dataDir'))
-    except:
-        logging.info('Creating log directories')
+    if (os.path.exists(utils.getCfg('dataDir'))):
+        logging.debug('Deleting exisitng log directories')
+        shutil.rmtree(utils.getCfg('dataDir'))    
+    logging.debug('Creating log directories')
     os.mkdir(utils.getCfg('dataDir'))
     os.mkdir(utils.getCfg('p2pDir'))
     os.mkdir(utils.getCfg('httpDir')) 
     
 def helpInfo():
-    logging.info('nescout version 1.0')
     logging.info('Usage: netscout [-i|-r] <interface> [-reset] ')
-    logging.info('Ensure you are root!')
 
 def verInfo():
     logging.info('nescout version 1.0')
     logging.critical('Ensure you are root!')
-
-
-def passiveAnalysis(conn):
-    p2pmodel=p2p.P2PModel(netscout.interface,netscout.P2P_FOLDER)
-    p2pmodel.getHubInfo()
-    p2pmodel.printP2PAnalysis()
 
 def processArgs():
     """
@@ -47,10 +38,8 @@ def processArgs():
     """
     paramList=sys.argv
     if ("-v" in paramList):
-        """
-        In addition the file logging, DEBUG and above messages will be logged to stdout
-        Edit the Stream logger (second in the handler array to update the logging level)
-        """
+        #In addition the file logging, DEBUG and above messages will be logged to stdout
+        #Edit the Stream logger (second in the handler array to update the logging level)
         logging.getLogger().handlers[1].setLevel(logging.DEBUG)
         logging.info('Detailed Screen logging on')
         
@@ -60,13 +49,15 @@ def processArgs():
         
     if ("-reset" in paramList):
         logging.warning("Resetting database! All data and configuration will be lost!")
-        initDB()
+        initDB("reset")
+    else:
+        initDB("check")
 
     """
         Ensure that the mandatory parameter '-i' or '-r' is specfied
     """ 
-    if (not("-i" in paramList or "-r" in paramList)):
-        logging.error("Either of INTERFACE '-i' or REPORT '-r' is MANDATORY")
+    if (not("-i" in paramList or "-r" in paramList or "-u" in paramList)):
+        logging.error("Specify one of '-i', '-r' or -u mandatory options")
         sys.exit()
     
     if("-i" in paramList):
@@ -78,20 +69,42 @@ def processArgs():
             logging.error("NO INTERFACE VALUE SPECIFIED")
             sys.exit()
         logging.info("netscout passive mode")
-        utils.setConfigParam("interface", interface)
-    else:  
-        logging.info("netscout report mode")
-        report()
-  
+        utils.setCfg("interface", interface)
+    else:
+        if("-i" in paramList):  
+            logging.info("netscout report mode")
+            report()
+        else:
+            if("-u" in paramList):
+                logging.info("netscout web domain update mode")
+                domainUpdate()
+
+def domainUpdate():
+    """
+    In the mode update the web domains and their category, based on keywords 
+    """
+    pass
+
 def report():
     conn = utils.connectDB()
     conn.close()
-    
 
-def initDB():
+
+def initDB(oper):
     """
-        Initialize database
+    Check for existence of db file. If reset required then either delete or create new 
+    db file and import the db schema
     """
+    if (os.path.exists(utils.getCfg('nsDB'))):
+        if (oper == "check"):
+            logging.debug("Using existing db file")
+            return
+        else:
+            if (oper == "reset"):
+                logging.debug("Deleting database file")
+                os.remove(utils.getCfg('nsDB'))
+    logging.debug("Creating new db file")
+    open(utils.getCfg('nsDB'),"w")
     conn = utils.connectDB()
     schemaFile = open(utils.getCfg('nsSchema'));
     conn.executescript(schemaFile.read())
@@ -100,15 +113,10 @@ def initDB():
     schemaFile.close()
     conn.close()
 
-def netscout():
+def setupLog():
     """
-    Main thread of execution
+    Perform the file and consolelogging setup
     """
-    
-    """
-    Configuring the logging framework
-    """
-    
     logging.basicConfig(filename='netscout.log',datefmt="%d-%m-%Y %H:%M",\
                         format="%(levelname)-8s %(asctime)+17s Line %(lineno)-4d %(module)s.%(funcName)-15s : %(message)s"\
                         ,level=logging.DEBUG,filemode="a")
@@ -119,13 +127,24 @@ def netscout():
     console.setFormatter(formatter)
     logging.getLogger().addHandler(console)
     logging.debug('Screen logging on')
+
+def main():
+    """
+    Main thread of execution
+    """
+    setupLog()
     verInfo()
     utils.readConfig()
     processArgs()
     createDirStruct()
+    if (utils.getCfg("p2pMode") == "true"):
+        logging.info("Initialing DC++ P2P scouting")
+        p2p.p2pModel()
     
-
+    #httpModel
+    #statModel
+    
 """
 Invoke the main thread.
 """
-netscout()
+main()
