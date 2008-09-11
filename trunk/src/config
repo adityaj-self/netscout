@@ -1,29 +1,14 @@
 ## The netscout config file contains parameters to fine tune capture. 
-## A double '#' is for lines which offer explaination and single-'#' for parameters disabled by default.
+## A double '#' is for lines which offer explaination and single-'#' 
+## for parameters disabled by default.
 ## Lines encolsed in '#' signify start of a logical section
-## The file structure is param=value. Please do not add string enclosures (like ' or ") unless specified
+## The file structure is param=value. 
+## Please do not add string enclosures (like ' or ") unless specified
 ## Always retain the [NETSCOUT] section
-
-#########################
-# NETSCOUT basic params #
-#########################
+## Dont comment out unwanted properties. Set them to false or appropriate.
 
 [NETSCOUT]
 
-## Folder to hold data
-dataDir=netdata
-
-## P2P data folder
-p2pDir=%(dataDir)s/p2p
-
-## HTTP data folder
-httpDir=%(dataDir)s/http
-
-## The name of the SQLite DB file
-nsDB=netscout.db
-
-## The relative location of the db schema file
-nsSchema=dbSchema.sql
 
 ##############################
 # NETSCOUT runtime behaviour #
@@ -32,23 +17,29 @@ nsSchema=dbSchema.sql
 ## You can control the netscout behaviour by selecting the kind of operations you
 ## want to be performed. 
 
+## Set to true if you want to check for DC++ p2p traffic
+dcppMode=true
+
+## Set to true if you want to check for http traffic
+httpMode=true
+
+## Set to true if you want to do statistical analysis
+statMode=true
+
+
 #################
 #HTTP(S) Proxies#
 #################
 
-## Set to true if you want to check for DC++ p2p traffic
-p2pMode=true
 
-## Set to true if network access (HTTP,HTTPS) is via proxy server, else comment out
+## Set to true if network access (HTTP,HTTPS) is via proxy server, else set to false
 proxy=true
 
-## Enter the fully qualified name or IP address of the proxy, else comment out
+## Enter the fully qualified name or IP address of the proxy. Checked only if proxy is true else comment out
 proxyHost=netmon.iitb.ac.in
 
 ## Set to true if you use password based authentication for the proxy access
 proxyAuth=true
-
-
 
 ##################################################
 # DC++ P2P (Unencrypted) specific configuration #
@@ -64,19 +55,36 @@ sr=6
 ## Number of HUB-Client Packets to look for
 hubClient=10
 
-## Number of LDAP Packets at HUB to look for
-ldapHUB=5
+## Number of HTTP request Packets at HUB to look for
+userHUB=5
 
 ## Number of packets to be looked at for getting client LDAP 
-ldapClient=5
+userClient=5
 
-## Type of file extensions to look for
+## Types of files and extensions to look for. Remove file types you do not
+## want to look for. Add extensions to other for categories you do not find here.
 
-ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma
+ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,.odt,.pdf,.txt,.rtf,.jpeg,.jpg,.png,.gif
 
 ###########################
 #Dump locations and format#
 ###########################
+
+
+## Folder to hold data
+dataDir=netdata
+
+## P2P data folder
+p2pDir=%(dataDir)s/p2p
+
+## HTTP data folder
+httpDir=%(dataDir)s/http
+
+## The name of the SQLite DB file
+nsDB=netscout.db
+
+## The relative location of the db schema file
+nsSchema=dbSchema.sql
 
 ## The information below is for specifying n/w dump locations and format(columns per file) in which the data is dumped.
 ## Unless you need to change file names/locations and have done any code changes to netscout, you are advised to leave
@@ -97,9 +105,6 @@ srDump=%(p2pDir)s/searchresult
 
 ## SR results in column format
 srColFile=%(p2pDir)s/sr_cols
-
-## File to hold proxy auth libpcap data
-uidFile=%(p2pDir)s/uid
 
 ## Userid extracted via tshark are stored here
 uidTshark=%(p2pDir)s/uid_tshark
