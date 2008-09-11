@@ -6,9 +6,9 @@ CREATE TABLE IF NOT EXISTS host
 );
 
 
-CREATE TABLE IF NOT EXISTS ldap
-(   ldapID INTEGER PRIMARY KEY AUTOINCREMENT,
-    ldapUser TEXT
+CREATE TABLE IF NOT EXISTS user
+(   userID INTEGER PRIMARY KEY AUTOINCREMENT,
+    userName TEXT
 );
 
 CREATE TABLE IF NOT EXISTS hostAct
@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS hostAct
     hostActID INTEGER PRIMARY KEY AUTOINCREMENT,
     timestamp INTEGER, --seconds from EPOCH
     hostID INTEGER,
-    ldapID INTEGER,
+    userID INTEGER,
     hwAddr TEXT    
 );
 
@@ -31,15 +31,13 @@ CREATE TABLE IF NOT EXISTS p2pAct
 (
     p2pActID INTEGER PRIMARY KEY AUTOINCREMENT,
     hostActID INTEGER,
-    domainID INTEGER
-    hubType TEXT, -- Server or Client
-    serverID INTEGER -- ID of Server (host ID), if server then link to fileList
+    hubType INTEGER, -- 0-Server or 1-Client
+    portNumOrHubIP INTEGER, -- Server Port or ID of Server (host ID) if client 
 );
 
 CREATE TABLE IF NOT EXISTS fileList
 (
-    fileListID INTEGER PRIMARY KEY AUTOINCREMENT,
-    fileType TEXT, -- Video, Audio
+    hostActID INTEGER
     fileList TEXT -- List of particular type
 );
 

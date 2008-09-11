@@ -1,11 +1,34 @@
 import sqlite3
 import logging
 import ConfigParser
+import sys
 """
 Utility file
 """
 
 cfg={}
+
+def fileToArray(fileName, validCol):
+    """
+    Convert file contents given by filename to validCol n-diemnsional arrays
+    """
+    multiList = []
+    dataList = []
+    for i in validCol:
+        multiList.append(dataList)
+    fileData=open(fileName,'r')
+    while 1:
+        line = fileData.readline()
+        if line:
+            line = (line.strip()).split()
+            if (len(line) == validCol):
+                for i in validCol:
+                    multiList[i].append(line[i])
+        else:
+            break
+    fileData.close()
+    return multiList
+
 
 def connectDB():
     """
@@ -18,10 +41,10 @@ def getCfg(param):
     Get value ofspecified param
     """
     if (cfg.has_key(param)):
-        return cfg[param]
+        return cfg[param].strip()
     else:
-        logging.warning("Parameter "+param+" not found")
-        return ""
+        logging.error("Parameter "+param+" not found")
+        sys.exit()
     
 def setCfg(param, value):
     """
