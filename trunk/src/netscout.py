@@ -13,6 +13,7 @@ import sqlite3
 import p2p
 import utils
 import http
+import host
 
 def createDirStruct():
     """
@@ -71,25 +72,27 @@ def processArgs():
             logging.error("NO INTERFACE VALUE SPECIFIED")
             sys.exit()
         logging.info("netscout passive mode")
+        utils.setCfg("mode","passive")
         utils.setCfg("interface", interface)
-    else:
-        if("-i" in paramList):  
-            logging.info("netscout report mode")
-            report()
+        return
+    
+    if("-r" in paramList):  
+        logging.info("netscout report mode")
+        report()
+
+    if("-u" in paramList):
+        logging.info("netscout web domain update mode")
+        http.domainUpdate()
+        updateInd=paramList.index("-u")+1
+        update=""
+        if (updateInd == len(paramList)-1):
+            update=paramList[updateInd]
+            if (update == "all"):
+                logging.warning("Updating all web domains")
+                utils.setCfg("update", update)
         else:
-            if("-u" in paramList):
-                logging.info("netscout web domain update mode")
-                http.domainUpdate()
-            updateInd=paramList.index("-u")+1
-            update=""
-            if (updateInd == len(paramList)-1):
-                update=paramList[updateInd]
-                if (update == "all"):
-                    logging.warning("Updating all web domains")
-                    utils.setCfg("update", update)
-            else:
-                logging.info("Updating new web domains")
-                utils.setCfg("update", "")
+            logging.info("Updating new web domains")
+            utils.setCfg("update", "")
 
 
 def report():
@@ -158,6 +161,23 @@ def setupLog():
     logging.getLogger().addHandler(console)
     logging.debug('Screen logging on')
 
+
+def checkRootPerms():
+    logging.debug("Checking if root permissions available")
+    os.system("tcpdump -i "+utils.getCfg("interface")+" -c 1 2> roottest 1> /dev/null")
+    fid = open("roottest")
+    if ("Operation not permitted" in fid.read()):
+        logging.error("ROOT permissions not available. Exiting.")
+        exit = True
+    else:
+        logging.debug("ROOT permissions available")
+        exit = False
+    os.remove("roottest")
+    if(exit):
+        sys.exit()
+        
+    
+
 def main():
     """
     Main thread of execution
@@ -166,14 +186,18 @@ def main():
     verInfo()
     utils.readConfig()
     processArgs()
+    checkRootPerms()
     createDirStruct()
-    if (utils.getCfg("dcppMode") == "true"):
-        logging.info("Initialing DC++ P2P scouting")
-        p2p.dcpp()
-
-    if (utils.getCfg("httpMode") == "true"):
-        logging.info("Initialing HTTP scouting")
-        http.httpActivity()
+    if(utils.getCfg("mode")=="passive"):
+        host.getHostsFromDB()
+        host.getUsersFromDB()
+        if (utils.getCfg("dcppMode") == "true"):
+            logging.info("Initialing DC++ P2P scouting")
+            p2p.dcpp()
+    
+        if (utils.getCfg("httpMode") == "true"):
+            logging.info("Initialing HTTP scouting")
+            http.httpActivity()
     
     
     #httpModel

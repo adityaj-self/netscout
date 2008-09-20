@@ -5,34 +5,53 @@ import utils
 from utils import getCfg
 
 import host
+import const
 
 
-def addP2PAct():
-    pass
+def addP2PAct(hostActID,hubType,portOrServerID):
+    """
+    Add p2p activity
+    """
+    t = (hostActID,hubType,portOrServerID)
+    conn = utils.connectDB()
+    cur = conn.cursor()
+    cur.execute("insert into p2pAct(hostActID,hubType,portNumorHubIP) values (?,?,?) ",t)
+    conn.close()
 
 def dcpp():
     """
     DC++ traffic analysis
     """
-    host.getHostsFromDB()
     identifyDCPPHUBs()
-    hubDataList=utils.fileToArray(get("hubColFile"), get("hubNCol"))
+    hubDataList=utils.fileToArray(getCfg("hubColFile"), const.HUB_COL_CNT)
     hubIPList = hubDataList[0]
     hubPortList = hubDataList[1]
     #Get LDAP
     i=0
     for ip in hubIPList:
-        hostActID=host.addHostActivity(ip, host.extractUserID(i), hwaddr)
+        port = hubPortList[i]
+        hostActID=host.addHostActivity(ip, host.extractUserID(ip), "")
         #Get files
-        videoList=getHubFiles(hostIP)
+        files=getHubFiles(ip)
         #Get Client
-        clientHostList=identifyClients(hubIP, hostPort)
+        clientHostList=identifyClients(ip, port)
         #Add host activity
+        logging.debug("Adding client information")
         for cip in clientHostList:
-            addP2PAct(host.addHostActivity(ip, host.extractUserID(cip), hwaddr),1,hostActID)
+            addP2PAct(host.addHostActivity(cip, host.extractUserID(cip), ""),1,hostActID)
+        logging.debug("Adding hub information")
         #Add p2p activity
-        addP2PAct(hostActID,0,hubPortList[i])
+        addP2PAct(hostActID,0,port)
+        addFileList(hostActID, files)
         i=i+1
+
+
+def addFileList(hostActID,files):
+    conn = utils.connectDB()
+    cur = conn.cursor()
+    t = (hostActID,files)
+    cur.execute("insert into fileList(hostActID,fileList) values (?,?) ",t)
+    conn.close()
 
 def identifyDCPPHUBs():
     logging.debug("Looking for DC++ HUBS")
@@ -46,36 +65,35 @@ def identifyClients(hubIP,hostPort):
     logging.debug('Scanning for P2P clients for HUB: '+hubIP)
     os.system("ngrep -q -i -d "+getCfg("interface")+" '' -W byline 'host "+hubIP+" and tcp src port "+hostPort+"' -n "+getCfg("hubClient")\
              +" | grep \"[0-9].[0-9].[0-9].[0-9] [ ->]\" | awk -F\" \" '{print $4}' | awk -F\":\" '{print $1}' |sort -u > "+getCfg("clientFile"))
-    clientHostList=self.fileToHost(self.CLT_FILE, self.CLT_NCOL)
-    logging.debug('Getting LDAP IDs of users acting as P2P Clients')
-    for i in range(len(clientHostList)):
-        host.extractUserID(clientIP)
-    return clientHostList
+    clientHostData=utils.fileToArray(getCfg("clientFile"), const.CLNT_COL_CNT)
+    clientIPList=clientHostData[0]
+    logging.debug("clientList: "+str(clientIPList))
+    return clientIPList
 
 def getHubFiles(hostIP):
     logging.info('Getting File List for HUB: '+hostIP)
-    os.system("ngrep -i -q -R -d "+getCfg("interface")+" -W byline -n "+getCfg("")+" -w '\$SR' 'src host "+hostIP+"' > "+self.SR_DUMP)
-    allFileData = open(self.SR_DUMP,'r').read()
+    os.system("ngrep -i -q -R -d "+getCfg("interface")+" -W byline -n "+getCfg("sr")+" -w '\$SR' 'src host "+hostIP+"' > "+getCfg("srDump"))
+    allFileData = open(getCfg("srDump"),'r').read()
     p=re.compile('\|\$SR [0-9A-Z_]*', re.DOTALL | re.IGNORECASE)
     q=re.compile('[0-9]/[0-9]\.TTH:[0-9A-Z]*', re.DOTALL | re.IGNORECASE)
     markstart=p.sub(' FILESTART',allFileData)
     markend=q.sub(' FILEEND',markstart)
     fileList=re.findall('FILESTART.*?FILEEND', markend, re.DOTALL | re.IGNORECASE)
-    videoList=[]
+    filteredFileList=[]
     logging.info('Searching for requested file extensions')
-    extension = getCfg("ext")
+    extension = getCfg("ext").split(',')
+    logging.debug("extensions: "+str(extension))
     for j in range(len(fileList)):
          fromInd=fileList[j].rfind('\\')
          fileList[j]=fileList[j].lower()
          fromInd=fromInd+1
          toInd=0
          for m in extension:
-             logging.debug("extension: "+m)         
              if (m in fileList[j]):
                  toInd=fileList[j].rfind(m)
                  toInd=toInd+len(m)
                  if (fileList[j][fromInd:toInd].strip()!='' and toInd!=0):
-                     videoList.append(fileList[j][fromInd:toInd])
-                 logging.debug("Files found as of now: "+videoList)
-    return videoList
+                     filteredFileList.append(fileList[j][fromInd:toInd])
+    logging.debug("videoList: "+str(filteredFileList))
+    return ', '.join(map(str,filteredFileList))
 
