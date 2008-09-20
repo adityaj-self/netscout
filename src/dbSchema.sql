@@ -32,12 +32,12 @@ CREATE TABLE IF NOT EXISTS p2pAct
     p2pActID INTEGER PRIMARY KEY AUTOINCREMENT,
     hostActID INTEGER,
     hubType INTEGER, -- 0-Server or 1-Client
-    portNumOrHubIP INTEGER, -- Server Port or ID of Server (host ID) if client 
+    portNumOrHubIP INTEGER -- Server Port or ID of Server (host ID) if client 
 );
 
 CREATE TABLE IF NOT EXISTS fileList
 (
-    hostActID INTEGER
+    hostActID INTEGER,
     fileList TEXT -- List of particular type
 );
 

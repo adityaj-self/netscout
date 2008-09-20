@@ -61,10 +61,18 @@ userHUB=5
 ## Number of packets to be looked at for getting client LDAP 
 userClient=5
 
+## Number of HTTP request packets/IP to look for
+singleWebCnt=10
+
+## Number of HTTP request packets to look for multiple hosts
+multiWebCnt=100
+
 ## Types of files and extensions to look for. Remove file types you do not
 ## want to look for. Add extensions to other for categories you do not find here.
 
 ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,.odt,.pdf,.txt,.rtf,.jpeg,.jpg,.png,.gif
+
+#ext = abc,efg
 
 ###########################
 #Dump locations and format#
@@ -74,31 +82,28 @@ ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,
 ## Folder to hold data
 dataDir=netdata
 
-## P2P data folder
-p2pDir=%(dataDir)s/p2p
-
-## HTTP data folder
-httpDir=%(dataDir)s/http
-
 ## The name of the SQLite DB file
 nsDB=netscout.db
 
 ## The relative location of the db schema file
 nsSchema=dbSchema.sql
 
-## The information below is for specifying n/w dump locations and format(columns per file) in which the data is dumped.
-## Unless you need to change file names/locations and have done any code changes to netscout, you are advised to leave
-## the below data untouched.
+## Unless you need to change file names/locations leave the below data untouched.
 
+## P2P data folder
+p2pDir=%(dataDir)s/p2p
+
+## HTTP data folder
+httpDir=%(dataDir)s/http
+
+## HTTP request packets stored here
+webActFile=%(httpDir)%/webactivity
 
 ## Set file to hold MyINFO packets
 myinfoDump=%(p2pDir)s/myinfo
 
 ## File to hold HUB data in column format
 hubColFile=%(p2pDir)s/hub_cols
-
-## Specify the number of columns captured for each HUB 
-hubNCol=2
 
 ## File to hold the SR (search result) packets
 srDump=%(p2pDir)s/searchresult
@@ -108,9 +113,6 @@ srColFile=%(p2pDir)s/sr_cols
 
 ## Userid extracted via tshark are stored here
 uidTshark=%(p2pDir)s/uid_tshark
-
-## Client file valid columns
-clientNCol=1
 
 ## File where client data gets stored
 clientFile=%(p2pDir)s/client

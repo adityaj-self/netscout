@@ -7,22 +7,24 @@ def categoriseWeb():
     
 def getWebActivity(hostIP):
     cmd = "tcpdump -i "+utils.getCfg('interface')
+    cmd +=" src host "+hostIP+"-n "+utils.getCfg('singleWebCnt')
     if(utils.getCfg('proxy') == "true"):
-        cmd +=" dst host "+utils.getCfg('proxyHost')
-    if(hostIP==""):
-        cmd+="-n "+utils.getCfg('allWebCnt')
-    else:
-        cmd +=" and src host "+hostIP+"-n "+utils.getCfg('oneWebCnt')
+        cmd +=" and dst host "+utils.getCfg('proxyHost')
     cmd+=" -w "+utils.getCfg('webActFile')
-    
+    os.system(cmd)
     
 def viaProxy():
     pass
 
 def httpActivity():
-    getWebActivity("")
+    cmd = "tcpdump -i "+utils.getCfg('interface')+"-n "+utils.getCfg('multiWebCnt')
+    if(utils.getCfg('proxy') == "true"):
+        cmd +=" dst host "+utils.getCfg('proxyHost')
+    cmd+=" -w "+utils.getCfg('webActFile')
+    os.system(cmd)
     
-def updateDomain():
+    
+def domainUpdate():
     """
     In the mode update the web domains and their category, based on keywords 
     """
