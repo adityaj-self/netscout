@@ -1,26 +1,26 @@
 import logging
-from utils import getCfg
-import utils
 import time
 import os
+
 import const
+from utils import getCfg
+import utils
 
 sessionUsers={} #Host-LDAP pair
-knownHost={}
-knownUser={}
+dbHosts={} #Hosts in the database
+dbUsers={} # users in the database
 
-
-def addHostActivity(ip,user,hwaddr):
+def addHostActivity(ip,user):
     hostid=addHost(ip)
     userid=addUser(user)
-    t=(int(time.time()),hostid,userid,hwaddr)
+    t=(int(time.time()),hostid,userid)
     conn = utils.connectDB()
     cur = conn.cursor()
-    cur.execute("insert into hostAct(timestamp,hostID,userID,hwaddr) values (?,?,?,?) ",t)
+    cur.execute("insert into hostAct(timestamp,hostID,userID) values (?,?,?) ",t)
     cur.execute("select max(hostActID) from hostAct")
     maxID = int(cur.fetchone()[0])
     conn.close()
-    return maxID
+    return maxID,hostid
 
 def extractUserID(hostIP):
     """
@@ -51,11 +51,12 @@ def getHostsFromDB():
     conn = utils.connectDB()
     cur = conn.cursor()
     cur.execute("select * from host")
-    dbHost = cur.fetchall()
-    logging.debug("Found existing "+str(len(dbHost))+" hosts")
-    for i in range(len(dbHost)):
-        knownHost[dbHost[i][const.ID_IND]] = dbHost[i][const.NAME_IND]
+    hostData = cur.fetchall()
+    logging.debug("Found existing "+str(len(hostData))+" hosts")
+    for i in range(len(hostData)):
+        dbHosts[int(hostData[i][const.ID_IND])] = hostData[i][const.NAME_IND]
     conn.close()
+    return dbHosts
 
 def getUsersFromDB():
     """
@@ -65,18 +66,19 @@ def getUsersFromDB():
     conn = utils.connectDB()
     cur = conn.cursor()
     cur.execute("select * from user")
-    dbUser = cur.fetchall()
-    logging.debug("Found existing "+str(len(dbUser))+" users")
-    for i in range(len(dbUser)):
-        knownUser[dbUser[i][const.ID_IND]] = dbUser[i][const.NAME_IND]
+    userData = cur.fetchall()
+    logging.debug("Found existing "+str(len(userData))+" users")
+    for i in range(len(userData)):
+        dbUsers[userData[i][const.ID_IND]] = userData[i][const.NAME_IND]
     conn.close()
+    return dbUsers
     
 
 def existsHost(host):
     """
     Return true and ID, or false and -1 based on presense of HOST IP
     """
-    for key,value in knownHost.items():
+    for key,value in dbHosts.items():
         if value == host:
             logging.debug("Host seen in this session")
             return (True,key)    
@@ -88,7 +90,7 @@ def existsUser(user):
     """
     Return true and ID, or false and -1 based on presense of USER Name
     """
-    for key,value in knownUser.items():
+    for key,value in dbUsers.items():
         if value == user:
             logging.debug("User seen in this session")
             return (True,key)    
@@ -109,7 +111,7 @@ def addHost(host):
         cur.execute("insert into host(hostIP) values (?)",(host,))
         cur.execute("select max(hostID) from host")
         maxID = int(cur.fetchone()[0])
-        knownHost[maxID] = host
+        dbHosts[maxID] = host
         conn.close()
         return maxID
 
@@ -126,7 +128,7 @@ def addUser(user):
         cur.execute("insert into user(userName) values (?)",(user,))
         cur.execute("select max(userID) from user")
         maxID = int(cur.fetchone()[0])
-        knownUser[maxID] = user
+        dbUsers[maxID] = user
         conn.close()
         return maxID
     
@@ -134,12 +136,16 @@ def getUserNameByID(userID):
     """
     Return the HOST IP address by the ID
     """
-    pass
+    for key,value in dbUsers.items():
+        if userID == key:
+            return value
 
 def getHostNameByID(hostID):
     """
     Return the HOST IP address by the ID
     """
-    pass
+    for key,value in dbHosts.items():
+        if hostID == key:
+            return value
 
 

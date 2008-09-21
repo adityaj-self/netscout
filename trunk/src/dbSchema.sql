@@ -16,8 +16,7 @@ CREATE TABLE IF NOT EXISTS hostAct
     hostActID INTEGER PRIMARY KEY AUTOINCREMENT,
     timestamp INTEGER, --seconds from EPOCH
     hostID INTEGER,
-    userID INTEGER,
-    hwAddr TEXT    
+    userID INTEGER
 );
 
 CREATE TABLE IF NOT EXISTS httpAct
