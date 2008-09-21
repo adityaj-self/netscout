@@ -9,21 +9,23 @@ import os
 import shutil
 import logging
 import sqlite3
+import time
 
 import p2p
 import utils
 import http
 import host
+import const
 
 def createDirStruct():
     """
-    Create the directory struccture for holding network dumps. 
+    Create the directory structure for holding network dumps. 
     A directory of the same name (if any) is deleted and recreated.
     """
     if (os.path.exists(utils.getCfg('dataDir'))):
-        logging.debug('Deleting exisitng log directories')
+        logging.debug('Deleting exisitng data directories')
         shutil.rmtree(utils.getCfg('dataDir'))    
-    logging.debug('Creating log directories')
+    logging.debug('Creating data directories')
     os.mkdir(utils.getCfg('dataDir'))
     os.mkdir(utils.getCfg('p2pDir'))
     os.mkdir(utils.getCfg('httpDir')) 
@@ -43,7 +45,7 @@ def processArgs():
     if ("-v" in paramList):
         #In addition the file logging, DEBUG and above messages will be logged to stdout
         #Edit the Stream logger (second in the handler array to update the logging level)
-        logging.getLogger().handlers[1].setLevel(logging.DEBUG)
+        logging.getLogger().handlers[const.CON_HANDLE].setLevel(logging.DEBUG)
         logging.info('Detailed Screen logging on')
         
     if ("-h" in paramList):
@@ -97,7 +99,35 @@ def processArgs():
 
 def report():
     conn = utils.connectDB()
-    conn.close()
+    cur = conn.cursor()
+    logging.debug("reporting findings")
+    hosts = host.getHostsFromDB()
+    users = host.getUsersFromDB()
+    for hostID,hostIP in hosts.items():
+        print'\n-----------------\n'
+        print'\nHOST:'+hostIP
+        t = (hostID,)
+        cur.execute('select * from hostAct where hostID = ?', t)
+        rs = cur.fetchall()
+        for i in range(len(rs)):
+            print'\t Activity: '+str(i)
+            print'\t User ID : '+users[rs[i][const.HA_USER_ID]].strip()
+            print'\t Time    : '+time.asctime(time.localtime(int(rs[i][const.HA_TIME])))
+            t = (rs[i][const.HA_ID],)
+            cur.execute('select * from p2pAct where hostActID = ?', t)
+            rs1 = cur.fetchall()
+            for j in range(len(rs1)):
+                print'\t\t P2P Act : '+str(j)
+                if (rs1[j][const.P2P_HUBTYPE] == const.SERVER):
+                    print'\t\t P2P Type: SERVER'
+                    print'\t\t PORT    : '+str(rs1[j][const.P2P_PORT_HUBID])
+                    print'\t\t FILES'
+                else:
+                    print'\t\t P2P Type: CLIENT'
+                    print'\t\t SERVER  : '+str(host.getHostNameByID(rs1[j][const.P2P_PORT_HUBID]))
+                
+    
+        #search 
 #    hubs=self.hubHostList
 #    logging.debug('P2P Analysis Stored at: '+self.P2P_ANALYSIS)
 #    p2pAnalysisData='\t\tP2P Analysis Results: \n'
@@ -121,6 +151,7 @@ def report():
 #        p2pAnalysisData+='\n --------------HUB INFO END-------------------------------------\n'
 #    p2pOutput.write(p2pAnalysisData)
 #    p2pOutput.close()
+    sys.exit()
 
 
 def initDB(oper):
@@ -199,6 +230,10 @@ def main():
             logging.info("Initialing HTTP scouting")
             http.httpActivity()
     
+        if (utils.getCfg("statMode") == "true"):
+            logging.info("Initialing statistical scouting")
+            http.httpActivity()
+            
     
     #httpModel
     #statModel

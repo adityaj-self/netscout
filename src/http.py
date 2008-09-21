@@ -7,7 +7,7 @@ def categoriseWeb():
     
 def getWebActivity(hostIP):
     cmd = "tcpdump -i "+utils.getCfg('interface')
-    cmd +=" src host "+hostIP+"-n "+utils.getCfg('singleWebCnt')
+    cmd +=" src host "+hostIP+" -n "+utils.getCfg('singleWebCnt')
     if(utils.getCfg('proxy') == "true"):
         cmd +=" and dst host "+utils.getCfg('proxyHost')
     cmd+=" -w "+utils.getCfg('webActFile')
@@ -17,7 +17,7 @@ def viaProxy():
     pass
 
 def httpActivity():
-    cmd = "tcpdump -i "+utils.getCfg('interface')+"-n "+utils.getCfg('multiWebCnt')
+    cmd = "tcpdump -i "+utils.getCfg('interface')+" -n "+utils.getCfg('multiWebCnt')
     if(utils.getCfg('proxy') == "true"):
         cmd +=" dst host "+utils.getCfg('proxyHost')
     cmd+=" -w "+utils.getCfg('webActFile')

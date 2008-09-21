@@ -1,8 +1,21 @@
 import sqlite3
+import ConfigParser
 
-import utils
+cfg = {}
 
-conn = sqlite3.connect('testdb')
-cur = conn.cursor()
-cur.execute("select * from temp")
-print  cur.fetchone()[2]
+parser = ConfigParser.ConfigParser()
+parser.optionxform = str
+parser.readfp(open('../src/config'))
+for x in parser.sections():
+    for y in parser.items(x):
+        cfg[y[0]] = y[1]
+l = []
+l = cfg['ext'].split(',')
+print l
+for m in l:
+    print m
+    
+p = ['abc','245']
+
+for m in p:
+    print m

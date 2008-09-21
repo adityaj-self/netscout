@@ -21,25 +21,10 @@
 dcppMode=true
 
 ## Set to true if you want to check for http traffic
-httpMode=true
+httpMode=false
 
 ## Set to true if you want to do statistical analysis
-statMode=true
-
-
-#################
-#HTTP(S) Proxies#
-#################
-
-
-## Set to true if network access (HTTP,HTTPS) is via proxy server, else set to false
-proxy=true
-
-## Enter the fully qualified name or IP address of the proxy. Checked only if proxy is true else comment out
-proxyHost=netmon.iitb.ac.in
-
-## Set to true if you use password based authentication for the proxy access
-proxyAuth=true
+statMode=false
 
 ##################################################
 # DC++ P2P (Unencrypted) specific configuration #
@@ -72,7 +57,20 @@ multiWebCnt=100
 
 ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,.odt,.pdf,.txt,.rtf,.jpeg,.jpg,.png,.gif
 
-#ext = abc,efg
+#################
+#HTTP(S) Proxies#
+#################
+
+
+## Set to true if network access (HTTP,HTTPS) is via proxy server, else set to false
+proxy=true
+
+## Enter the fully qualified name or IP address of the proxy. Checked only if proxy is true else comment out
+proxyHost=netmon.iitb.ac.in
+
+## Set to true if you use password based authentication for the proxy access
+proxyAuth=true
+
 
 ###########################
 #Dump locations and format#
