@@ -1,3 +1,9 @@
+## Author - Aditya Joshi
+## File - host.py 
+
+## Contains routines to manipulate the host based parameters. 
+
+
 import logging
 import time
 import os
@@ -6,7 +12,7 @@ import const
 from utils import getCfg
 import utils
 
-sessionUsers={} #Host-LDAP pair
+sessionUsers={} #Host-Userid pair
 dbHosts={} #Hosts in the database
 dbUsers={} # users in the database
 

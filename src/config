@@ -1,3 +1,6 @@
+## Author - Aditya Joshi
+## File - config
+
 ## The netscout config file contains parameters to fine tune capture. 
 ## A double '#' is for lines which offer explaination and single-'#' 
 ## for parameters disabled by default.
@@ -5,7 +8,7 @@
 ## The file structure is param=value. 
 ## Please do not add string enclosures (like ' or ") unless specified
 ## Always retain the [NETSCOUT] section
-## Dont comment out unwanted properties. Set them to false or appropriate.
+## Do not comment out unwanted properties. Set them to false or appropriate.
 
 [NETSCOUT]
 
@@ -40,11 +43,9 @@ sr=6
 ## Number of HUB-Client Packets to look for
 hubClient=10
 
-## Number of HTTP request Packets at HUB to look for
+## Number of HTTP request packets to look for each DCPP host
+## to determine userid
 userHUB=5
-
-## Number of packets to be looked at for getting client LDAP 
-userClient=5
 
 ## Number of HTTP request packets/IP to look for
 singleWebCnt=10
@@ -53,9 +54,9 @@ singleWebCnt=10
 multiWebCnt=100
 
 ## Types of files and extensions to look for. Remove file types you do not
-## want to look for. Add extensions to other for categories you do not find here.
+## want to look for. Add extensions you do not find here.
 
-ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,.odt,.pdf,.txt,.rtf,.jpeg,.jpg,.png,.gif
+ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.jpeg,.jpg,.png,.gif
 
 #################
 #HTTP(S) Proxies#
@@ -65,10 +66,11 @@ ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.exe,.zip,.rar,.7zip,.doc,.xls,.ods,
 ## Set to true if network access (HTTP,HTTPS) is via proxy server, else set to false
 proxy=true
 
-## Enter the fully qualified name or IP address of the proxy. Checked only if proxy is true else comment out
+## Enter the fully qualified name or IP address of the proxy. 
+## Checked only if proxy is set to true.
 proxyHost=netmon.iitb.ac.in
 
-## Set to true if you use password based authentication for the proxy access
+## Set to true, if you use password based authentication for the proxy access
 proxyAuth=true
 
 
@@ -114,8 +116,5 @@ uidTshark=%(p2pDir)s/uid_tshark
 
 ## File where client data gets stored
 clientFile=%(p2pDir)s/client
-
-## Storing client proxy auth data
-clientLDAPFile=%(p2pDir)s/client_ldap
 
 

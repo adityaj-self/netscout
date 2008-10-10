@@ -1,5 +1,8 @@
+## Author - Aditya Joshi
+## File - const.py
+
 """
-Constants file
+Constants file. Contains place holders for consatnats used in netscout.
 """
 
 ## Console Handler

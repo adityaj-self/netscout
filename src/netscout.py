@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+## Author - Aditya Joshi
+## File - netscout.py
+
 """
 Author: Aditya Joshi
 """
@@ -103,6 +106,10 @@ def report():
     logging.debug("reporting findings")
     hosts = host.getHostsFromDB()
     users = host.getUsersFromDB()
+    logging.debug("len(hosts):"+str(len(hosts)))
+    if (len(hosts) == 0):
+	logging.info("No data available to generate report")
+	sys.exit()
     for hostID,hostIP in hosts.items():
         print'\n-----------------\n'
         print'\nHOST:'+hostIP
@@ -125,32 +132,6 @@ def report():
                 else:
                     print'\t\t P2P Type: CLIENT'
                     print'\t\t SERVER  : '+str(host.getHostNameByID(rs1[j][const.P2P_PORT_HUBID]))
-                
-    
-        #search 
-#    hubs=self.hubHostList
-#    logging.debug('P2P Analysis Stored at: '+self.P2P_ANALYSIS)
-#    p2pAnalysisData='\t\tP2P Analysis Results: \n'
-#    p2pAnalysisData+='\t\t--------------------\n'
-#    p2pOutput=open(self.P2P_ANALYSIS,'w')
-#    for i in range(len(hubs)):
-#        p2pAnalysisData+='\n --------------INFO FOR HUB : '+hubs[i].ipAddr+'--------------------------\n\n'
-#        p2pAnalysisData+='HUB IP'.rjust(16)+'PORT'.rjust(6)+'LDAP ID'.rjust(10)+'\n'
-#        p2pAnalysisData+=hubs[i].ipAddr.rjust(16)+hubs[i].port.rjust(6)+hubs[i].loginLDAP.rjust(10)+'\n'
-#        p2pAnalysisData+='\nClients connected to the HUB'+'\n'
-#        clients=hubs[i].clients
-#        for i in range(len(clients)):
-#            p2pAnalysisData+='Client IP'.rjust(16)+'LDAP ID'.rjust(10)+'\n'
-#            p2pAnalysisData+=clients[i].ipAddr.rjust(16)+clients[i].loginLDAP.rjust(10)+'\n'
-#        p2pAnalysisData+='\nVideo files hosted by HUB: \n\n'
-#        fileList=hubs[i].fileList
-#        for k in range(len(fileList)):
-#            logging.debug(fileList[k]+'\n')
-#            p2pAnalysisData+=fileList[k]+'\n'
-#        logging.debug('\n --------------HUB INFO END-------------------------------------\n')
-#        p2pAnalysisData+='\n --------------HUB INFO END-------------------------------------\n'
-#    p2pOutput.write(p2pAnalysisData)
-#    p2pOutput.close()
     sys.exit()
 
 
@@ -173,7 +154,7 @@ def initDB(oper):
     schemaFile = open(utils.getCfg('nsSchema'));
     conn.executescript(schemaFile.read())
     conn.commit()
-    logging.info('Database reset successfully')
+    logging.info('Database initialized successfully')
     schemaFile.close()
     conn.close()
 
@@ -233,10 +214,6 @@ def main():
         if (utils.getCfg("statMode") == "true"):
             logging.info("Initialing statistical scouting")
             http.httpActivity()
-            
-    
-    #httpModel
-    #statModel
     
 """
 Invoke the main thread.
