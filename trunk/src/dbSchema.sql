@@ -52,7 +52,8 @@ CREATE TABLE IF NOT EXISTS domainCat
 (
     catID INTEGER PRIMARY KEY AUTOINCREMENT,
     catName TEXT,
-    blacklist BOOLEAN,
+    blacklist BOOLEAN, -- O - not blacklisted, 1 - blacklisted
     keywords TEXT
 );
 
+INSERT INTO TABLE domainCat VALUES (0,"unclassified",0,"");

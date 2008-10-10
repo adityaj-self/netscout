@@ -1,3 +1,6 @@
+## Author - Aditya Joshi
+## File - utils.py
+
 import sqlite3
 import logging
 import ConfigParser
