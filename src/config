@@ -35,13 +35,13 @@ statMode=false
 
 
 ## Number of MyINFO packets to look for (ie number of HUBS to locate)
-myinfo=20
+myinfo=18
 
 ## Number of Search Results packets to look for (to get file list)
-sr=6
+sr=26
 
 ## Number of HUB-Client Packets to look for
-hubClient=10
+hubClient=15
 
 ## Number of HTTP request packets to look for each DCPP host
 ## to determine userid
@@ -58,9 +58,9 @@ multiWebCnt=100
 
 ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.jpeg,.jpg,.png,.gif
 
-#################
-#HTTP(S) Proxies#
-#################
+#####################
+#HTTP Configuration #
+#####################
 
 
 ## Set to true if network access (HTTP,HTTPS) is via proxy server, else set to false
@@ -73,6 +73,14 @@ proxyHost=netmon.iitb.ac.in
 ## Set to true, if you use password based authentication for the proxy access
 proxyAuth=true
 
+## Keywords to scan for in web data, to categorise sites. The categories appear in
+## decreasing order of search. Also say www.orkut.com is a socio-networking website
+## but it does offer video support so it may be marked as video streaming site.
+## Adjust keywords and order to your requirement. 
+
+capture['Adult'] = ["sex","porn"]
+category['Video'] = ["video","stream"]
+category['SocialNetworking'] = ["friends","network","meet"]
 
 ###########################
 #Dump locations and format#
@@ -116,5 +124,8 @@ uidTshark=%(p2pDir)s/uid_tshark
 
 ## File where client data gets stored
 clientFile=%(p2pDir)s/client
+clientFile1=%(p2pDir)s/client1
 
+## 
+webActHostFile=%(httpDir)s/webacthost
 

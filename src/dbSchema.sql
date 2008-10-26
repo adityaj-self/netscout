@@ -56,4 +56,4 @@ CREATE TABLE IF NOT EXISTS domainCat
     keywords TEXT
 );
 
-INSERT INTO TABLE domainCat VALUES (0,"unclassified",0,"");
+INSERT INTO domainCat VALUES (-1,"unclassified",0,"");

@@ -111,7 +111,8 @@ def report():
 	logging.info("No data available to generate report")
 	sys.exit()
     for hostID,hostIP in hosts.items():
-        print'\n-----------------\n'
+        print'\n------------------------------------------------------'
+        print'------------------------------------------------------'
         print'\nHOST:'+hostIP
         t = (hostID,)
         cur.execute('select * from hostAct where hostID = ?', t)
@@ -128,7 +129,9 @@ def report():
                 if (rs1[j][const.P2P_HUBTYPE] == const.SERVER):
                     print'\t\t P2P Type: SERVER'
                     print'\t\t PORT    : '+str(rs1[j][const.P2P_PORT_HUBID])
-                    print'\t\t FILES'
+		    cur.execute('select * from fileList where hostActID = ?',t)
+		    rs2 = cur.fetchall()
+		    print'\t\t FILES: \n'+str(rs2[const.ROW_ID][const.FILELIST_ID])
                 else:
                     print'\t\t P2P Type: CLIENT'
                     print'\t\t SERVER  : '+str(host.getHostNameByID(rs1[j][const.P2P_PORT_HUBID]))
@@ -173,18 +176,32 @@ def setupLog():
     logging.getLogger().addHandler(console)
     logging.debug('Screen logging on')
 
+"""
+Ensuring prerequisites exist on host 
+"""
 
-def checkRootPerms():
+def checkPrereqs():
+    exit = False
+    toCheck = ["tcpdump","tshark","ngrep"]
+    for prereq in toCheck:
+	os.system("which "+prereq+" 2> cmdtest 1>/dev/null")
+	fid = open("cmdtest")
+	if ("which: no hello in" in fid.read()):
+	    logging.error(prereq+" check failed")
+	    exit = True
+	else:
+	    logging.debug(prereq+" check ok")
+    if (exit):
+	sys.exit()
     logging.debug("Checking if root permissions available")
-    os.system("tcpdump -i "+utils.getCfg("interface")+" -c 1 2> roottest 1> /dev/null")
-    fid = open("roottest")
+    os.system("tcpdump -i "+utils.getCfg("interface")+" -c 1 2> cmdtest 1> /dev/null")
+    fid = open("cmdtest")
     if ("Operation not permitted" in fid.read()):
         logging.error("ROOT permissions not available. Exiting.")
         exit = True
     else:
         logging.debug("ROOT permissions available")
-        exit = False
-    os.remove("roottest")
+	os.remove("cmdtest")
     if(exit):
         sys.exit()
         
@@ -198,7 +215,7 @@ def main():
     verInfo()
     utils.readConfig()
     processArgs()
-    checkRootPerms()
+    checkPrereqs()
     createDirStruct()
     if(utils.getCfg("mode")=="passive"):
         host.getHostsFromDB()
