@@ -58,15 +58,21 @@ def addFileList(hostActID,files):
 def identifyDCPPHUBs():
     logging.debug("Looking for DC++ HUBS")
     logging.debug("Listening for MyINFO packets")
-    os.system("ngrep -i -q -R -d "+getCfg("interface")+" -n "+getCfg("myinfo")+" -w MyINFO -O "+getCfg("myinfoDump")+"> /dev/null")
+    os.system("ngrep -i -q -R -d "+getCfg("interface")+" -n "+getCfg("myinfo")+\
+	    " -w MyINFO -O "+getCfg("myinfoDump")+"> /dev/null")
     logging.debug("Obtaining DC++ HUBS IP and PORT")
-    os.system("ngrep -i -q -R -I "+getCfg("myinfoDump")+" -w GetNickList -v | grep \"[0-9].[0-9].[0-9].[0-9]:[0-9]* [ ->]\" | awk -F\" \" '{print $2}'| awk -F\":\" '{print $1\" \"$2}' | sort -u > "+getCfg("hubColFile"))
+    os.system("ngrep -i -q -R -I "+getCfg("myinfoDump")+" -w GetNickList -v "\
+	    +"| grep -E '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]\:[0-9]+\ ' "\
+	    +"| awk -F\" \" '{print $2}'| awk -F\":\" '{print $1\" \"$2}' "\
+	    +"| sort -u > "+getCfg("hubColFile"))
 
 def identifyClients(hubIP,hostPort):
     logging.debug('Scanning for P2P clients')
     logging.debug('Scanning for P2P clients for HUB: '+hubIP)
-    os.system("ngrep -q -i -d "+getCfg("interface")+" '' -W byline 'host "+hubIP+" and tcp src port "+hostPort+"' -n "+getCfg("hubClient")\
-             +" | grep \"[0-9].[0-9].[0-9].[0-9] [ ->]\" | awk -F\" \" '{print $4}' | awk -F\":\" '{print $1}' |sort -u > "+getCfg("clientFile"))
+    os.system("tcpdump -c "+getCfg("hubClient")+" -i "+getCfg("interface")\
+		+" 'src host "+hubIP+" and src port "+hostPort+"' > "+getCfg("clientFile1"))
+    os.system("cut -d ' ' -f5 "+getCfg("clientFile1")+" | sort -u | sed '/^$/d' | "\
+		    +"awk -F\".\" '{print $1\".\"$2\".\"$3\".\"$4}' > "+getCfg("clientFile"))
     clientHostData=utils.fileToArray(getCfg("clientFile"), const.CLNT_COL_CNT)
     clientIPList=clientHostData[0]
     logging.debug("clientList: "+str(clientIPList))

@@ -34,3 +34,14 @@ AH_HOSTACTID = 0
 
 P2P_HUBTYPE = 2
 P2P_PORT_HUBID = 3
+
+## Web domain table
+## Unclassified websites
+UNCLASSED = -1 
+
+## P2P filelist. 
+##Row id for row matching host activity id. 
+ROW_ID = 0
+
+## File list ID
+FILELIST_ID = 1

@@ -1,0 +1,1472 @@
+INFO      10-10-2008 17:56 Line 190  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 17:56 Line 196  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 17:56 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 17:56 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 17:56 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     10-10-2008 17:56 Line 173  netscout.initDB          : Creating new db file
+INFO      10-10-2008 17:56 Line 179  netscout.initDB          : Database reset successfully
+ERROR     10-10-2008 17:56 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      10-10-2008 17:58 Line 165  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 17:58 Line 171  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 17:58 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 17:58 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 17:58 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     10-10-2008 17:58 Line 142  netscout.initDB          : Using existing db file
+ERROR     10-10-2008 17:58 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      10-10-2008 17:59 Line 165  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 17:59 Line 171  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 17:59 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 17:59 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 17:59 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     10-10-2008 17:59 Line 142  netscout.initDB          : Using existing db file
+INFO      10-10-2008 17:59 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 17:59 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 17:59 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 17:59 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 17:59 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 17:59 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      10-10-2008 18:13 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:13 Line 174  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:13 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:13 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:13 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     10-10-2008 18:13 Line 145  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:13 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:13 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:13 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:13 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:13 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:13 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      10-10-2008 18:15 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:15 Line 174  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:15 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:15 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:15 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      10-10-2008 18:15 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     10-10-2008 18:15 Line 145  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:15 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:15 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:15 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:15 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:15 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:15 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      10-10-2008 18:16 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:16 Line 174  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:16 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:16 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:16 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      10-10-2008 18:16 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     10-10-2008 18:16 Line 145  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:16 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:16 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:16 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:16 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:16 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:16 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      10-10-2008 18:16 Line 110  netscout.report          : No data available to generate report
+DEBUG     10-10-2008 18:16 Line 178  netscout.checkRootPerms  : Checking if root permissions available
+ERROR     10-10-2008 18:16 Line 51   utils.getCfg          : Parameter :interface: not found
+INFO      10-10-2008 18:17 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:17 Line 175  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:17 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:17 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:17 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      10-10-2008 18:17 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     10-10-2008 18:17 Line 146  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:17 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:17 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:17 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:17 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:17 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:17 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      10-10-2008 18:17 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:17 Line 175  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:17 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:17 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:17 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      10-10-2008 18:17 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     10-10-2008 18:17 Line 146  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:17 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:17 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:17 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:17 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:17 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:17 Line 76   host.getUsersFromDB  : Found existing 0 users
+DEBUG     10-10-2008 18:17 Line 109  netscout.report          : len(hosts):0
+INFO      10-10-2008 18:17 Line 111  netscout.report          : No data available to generate report
+DEBUG     10-10-2008 18:17 Line 179  netscout.checkRootPerms  : Checking if root permissions available
+ERROR     10-10-2008 18:17 Line 51   utils.getCfg          : Parameter :interface: not found
+INFO      10-10-2008 18:18 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:18 Line 175  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:18 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:18 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:18 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      10-10-2008 18:18 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     10-10-2008 18:18 Line 146  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:18 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:18 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:18 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:18 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:18 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:18 Line 76   host.getUsersFromDB  : Found existing 0 users
+DEBUG     10-10-2008 18:18 Line 109  netscout.report          : len(hosts):0
+INFO      10-10-2008 18:18 Line 111  netscout.report          : No data available to generate report
+INFO      10-10-2008 18:18 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     10-10-2008 18:18 Line 175  netscout.setupLog        : Screen logging on
+INFO      10-10-2008 18:18 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  10-10-2008 18:18 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      10-10-2008 18:18 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     10-10-2008 18:18 Line 146  netscout.initDB          : Using existing db file
+INFO      10-10-2008 18:18 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     10-10-2008 18:18 Line 106  netscout.report          : reporting findings
+DEBUG     10-10-2008 18:18 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     10-10-2008 18:18 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     10-10-2008 18:18 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     10-10-2008 18:18 Line 76   host.getUsersFromDB  : Found existing 0 users
+DEBUG     10-10-2008 18:18 Line 109  netscout.report          : len(hosts):0
+INFO      10-10-2008 18:18 Line 111  netscout.report          : No data available to generate report
+INFO      11-10-2008 17:17 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     11-10-2008 17:17 Line 174  netscout.setupLog        : Screen logging on
+INFO      11-10-2008 17:17 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  11-10-2008 17:17 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      11-10-2008 17:17 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     11-10-2008 17:17 Line 145  netscout.initDB          : Using existing db file
+ERROR     11-10-2008 17:17 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      24-10-2008 22:06 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:06 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:06 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:06 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:06 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:06 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:06 Line 145  netscout.initDB          : Using existing db file
+ERROR     24-10-2008 22:06 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      24-10-2008 22:06 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:06 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:06 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:06 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:06 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:06 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:06 Line 145  netscout.initDB          : Using existing db file
+INFO      24-10-2008 22:06 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     24-10-2008 22:06 Line 106  netscout.report          : reporting findings
+DEBUG     24-10-2008 22:06 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     24-10-2008 22:06 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     24-10-2008 22:06 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     24-10-2008 22:06 Line 76   host.getUsersFromDB  : Found existing 0 users
+DEBUG     24-10-2008 22:06 Line 109  netscout.report          : len(hosts):0
+INFO      24-10-2008 22:06 Line 111  netscout.report          : No data available to generate report
+INFO      24-10-2008 22:06 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:06 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:06 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:06 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:06 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:06 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:06 Line 145  netscout.initDB          : Using existing db file
+ERROR     24-10-2008 22:06 Line 77   netscout.processArgs     : NO INTERFACE VALUE SPECIFIED
+INFO      24-10-2008 22:06 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:06 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:06 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:06 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:06 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:06 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:06 Line 145  netscout.initDB          : Using existing db file
+INFO      24-10-2008 22:06 Line 79   netscout.processArgs     : netscout passive mode
+INFO      24-10-2008 22:07 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:07 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:07 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:07 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:07 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:07 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:07 Line 145  netscout.initDB          : Using existing db file
+INFO      24-10-2008 22:07 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     24-10-2008 22:07 Line 184  netscout.checkPrereqs    : Checking for tcpdump
+DEBUG     24-10-2008 22:07 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     24-10-2008 22:07 Line 184  netscout.checkPrereqs    : Checking for tshark
+DEBUG     24-10-2008 22:07 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     24-10-2008 22:07 Line 184  netscout.checkPrereqs    : Checking for ngrep
+DEBUG     24-10-2008 22:07 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     24-10-2008 22:07 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     24-10-2008 22:07 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     24-10-2008 22:07 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     24-10-2008 22:07 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     24-10-2008 22:07 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     24-10-2008 22:07 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     24-10-2008 22:07 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      24-10-2008 22:07 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     24-10-2008 22:07 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     24-10-2008 22:07 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     24-10-2008 22:08 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     24-10-2008 22:08 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     24-10-2008 22:08 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1'], ['411']]
+DEBUG     24-10-2008 22:08 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     24-10-2008 22:08 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     24-10-2008 22:08 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     24-10-2008 22:08 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     24-10-2008 22:08 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     24-10-2008 22:08 Line 103  host.existsUser      : User not been seen in this session
+INFO      24-10-2008 22:08 Line 76   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      24-10-2008 22:08 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     24-10-2008 22:08 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     24-10-2008 22:08 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     24-10-2008 22:08 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     24-10-2008 22:08 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     24-10-2008 22:09 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     24-10-2008 22:09 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2', 'The']]
+DEBUG     24-10-2008 22:09 Line 72   p2p.identifyClients : clientList: ['192.168.1.2', 'The']
+DEBUG     24-10-2008 22:09 Line 41   p2p.dcpp            : Adding client information
+DEBUG     24-10-2008 22:09 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     24-10-2008 22:09 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     24-10-2008 22:09 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     24-10-2008 22:09 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     24-10-2008 22:09 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     24-10-2008 22:09 Line 103  host.existsUser      : User not been seen in this session
+DEBUG     24-10-2008 22:09 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     24-10-2008 22:09 Line 40   host.extractUserID   : Obtaining User id for: The
+DEBUG     24-10-2008 22:09 Line 41   host.extractUserID   : Scanning HTTP requests for : The
+DEBUG     24-10-2008 22:09 Line 110  host.addHost         : adding hostThe
+DEBUG     24-10-2008 22:09 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     24-10-2008 22:09 Line 101  host.existsUser      : User seen in this session
+DEBUG     24-10-2008 22:09 Line 44   p2p.dcpp            : Adding hub information
+INFO      24-10-2008 22:09 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     24-10-2008 22:09 Line 174  netscout.setupLog        : Screen logging on
+INFO      24-10-2008 22:09 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  24-10-2008 22:09 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      24-10-2008 22:09 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      24-10-2008 22:09 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     24-10-2008 22:09 Line 145  netscout.initDB          : Using existing db file
+INFO      24-10-2008 22:09 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     24-10-2008 22:09 Line 106  netscout.report          : reporting findings
+DEBUG     24-10-2008 22:09 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     24-10-2008 22:09 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     24-10-2008 22:09 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     24-10-2008 22:09 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     24-10-2008 22:09 Line 109  netscout.report          : len(hosts):3
+INFO      25-10-2008 15:55 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 15:55 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 15:55 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 15:55 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 15:55 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 15:55 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 15:55 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 15:55 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 15:55 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 15:55 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 15:55 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 15:55 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 15:55 Line 109  netscout.report          : len(hosts):3
+INFO      25-10-2008 16:05 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:05 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:05 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:05 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:05 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 16:05 Line 145  netscout.initDB          : Using existing db file
+ERROR     25-10-2008 16:05 Line 77   netscout.processArgs     : NO INTERFACE VALUE SPECIFIED
+INFO      25-10-2008 16:05 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:05 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:05 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:05 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:05 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 16:05 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:05 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 16:05 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 16:05 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 16:05 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 16:05 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 16:05 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:05 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 16:05 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:05 Line 76   host.getUsersFromDB  : Found existing 2 users
+INFO      25-10-2008 16:05 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 16:05 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 16:05 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 16:05 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 16:05 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 16:05 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      25-10-2008 16:05 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:05 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:05 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:05 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:05 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 16:05 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 16:05 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:05 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 16:05 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 16:05 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 16:05 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 16:05 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 16:05 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 16:05 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:05 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 16:05 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:05 Line 76   host.getUsersFromDB  : Found existing 2 users
+INFO      25-10-2008 16:05 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 16:05 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 16:05 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 16:05 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 16:05 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 16:05 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      25-10-2008 16:06 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:06 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:06 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:06 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:06 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 16:06 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 16:06 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:06 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 16:06 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 16:06 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 16:06 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 16:06 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 16:06 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 16:06 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 16:06 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 16:06 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:06 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 16:06 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:06 Line 76   host.getUsersFromDB  : Found existing 2 users
+INFO      25-10-2008 16:06 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 16:06 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 16:06 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 16:06 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 16:06 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 16:06 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1', '192.168.1.2'], ['411', '32995']]
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     25-10-2008 16:06 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+INFO      25-10-2008 16:06 Line 76   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      25-10-2008 16:06 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 16:06 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 16:06 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 16:06 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 16:06 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     25-10-2008 16:06 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 16:06 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['1/1.TTH', '192.168.1.2', 'Downloaded\\telugu\\Nirnayam-helloguru.wmv.11356086', 'Downloads\\Audio', 'Files\\OpenOffice.org', 'Krushi\\Hello', 'Music\\English\\Def', 'Program', 'comp.psd.8148104', 'ones)\\27.', 'prep', 'suur6']]
+DEBUG     25-10-2008 16:06 Line 72   p2p.identifyClients : clientList: ['1/1.TTH', '192.168.1.2', 'Downloaded\\telugu\\Nirnayam-helloguru.wmv.11356086', 'Downloads\\Audio', 'Files\\OpenOffice.org', 'Krushi\\Hello', 'Music\\English\\Def', 'Program', 'comp.psd.8148104', 'ones)\\27.', 'prep', 'suur6']
+DEBUG     25-10-2008 16:06 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: 1/1.TTH
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : 1/1.TTH
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding host1/1.TTH
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     25-10-2008 16:06 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Downloaded\telugu\Nirnayam-helloguru.wmv.11356086
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Downloaded\telugu\Nirnayam-helloguru.wmv.11356086
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding hostDownloaded\telugu\Nirnayam-helloguru.wmv.11356086
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Downloads\Audio
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Downloads\Audio
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding hostDownloads\Audio
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Files\OpenOffice.org
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Files\OpenOffice.org
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding hostFiles\OpenOffice.org
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Krushi\Hello
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Krushi\Hello
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding hostKrushi\Hello
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Music\English\Def
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Music\English\Def
+DEBUG     25-10-2008 16:06 Line 110  host.addHost         : adding hostMusic\English\Def
+DEBUG     25-10-2008 16:06 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:06 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:06 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:06 Line 40   host.extractUserID   : Obtaining User id for: Program
+DEBUG     25-10-2008 16:06 Line 41   host.extractUserID   : Scanning HTTP requests for : Program
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding hostProgram
+DEBUG     25-10-2008 16:07 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:07 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:07 Line 40   host.extractUserID   : Obtaining User id for: comp.psd.8148104
+DEBUG     25-10-2008 16:07 Line 41   host.extractUserID   : Scanning HTTP requests for : comp.psd.8148104
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding hostcomp.psd.8148104
+DEBUG     25-10-2008 16:07 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:07 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:07 Line 40   host.extractUserID   : Obtaining User id for: ones)\27.
+DEBUG     25-10-2008 16:07 Line 41   host.extractUserID   : Scanning HTTP requests for : ones)\27.
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding hostones)\27.
+DEBUG     25-10-2008 16:07 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:07 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:07 Line 40   host.extractUserID   : Obtaining User id for: prep
+DEBUG     25-10-2008 16:07 Line 41   host.extractUserID   : Scanning HTTP requests for : prep
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding hostprep
+DEBUG     25-10-2008 16:07 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:07 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:07 Line 40   host.extractUserID   : Obtaining User id for: suur6
+DEBUG     25-10-2008 16:07 Line 41   host.extractUserID   : Scanning HTTP requests for : suur6
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding hostsuur6
+DEBUG     25-10-2008 16:07 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:07 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     25-10-2008 16:07 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:07 Line 38   host.extractUserID   : UserID Known: ashokj
+
+DEBUG     25-10-2008 16:07 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     25-10-2008 16:07 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:07 Line 101  host.existsUser      : User seen in this session
+INFO      25-10-2008 16:07 Line 76   p2p.getHubFiles     : Getting File List for HUB: 192.168.1.2
+INFO      25-10-2008 16:07 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 16:07 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 16:07 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 16:07 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 16:07 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 192.168.1.2
+DEBUG     25-10-2008 16:07 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 16:07 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     25-10-2008 16:07 Line 72   p2p.identifyClients : clientList: []
+DEBUG     25-10-2008 16:07 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 16:07 Line 44   p2p.dcpp            : Adding hub information
+INFO      25-10-2008 16:07 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:07 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:07 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:07 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:07 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 16:07 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:07 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 16:07 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 16:07 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:07 Line 61   host.getHostsFromDB  : Found existing 14 hosts
+DEBUG     25-10-2008 16:07 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:07 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 16:07 Line 109  netscout.report          : len(hosts):14
+INFO      25-10-2008 16:25 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:25 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:25 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:25 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:25 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 16:25 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 16:25 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:25 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 16:25 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 16:25 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 16:25 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 16:25 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 16:25 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 16:25 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 16:25 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 16:25 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:25 Line 61   host.getHostsFromDB  : Found existing 14 hosts
+DEBUG     25-10-2008 16:25 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:25 Line 76   host.getUsersFromDB  : Found existing 2 users
+INFO      25-10-2008 16:25 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 16:25 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 16:25 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 16:25 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 16:25 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 16:25 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1', '192.168.1.2'], ['411', '46739']]
+DEBUG     25-10-2008 16:25 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:25 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     25-10-2008 16:25 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     25-10-2008 16:26 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     25-10-2008 16:26 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:26 Line 101  host.existsUser      : User seen in this session
+INFO      25-10-2008 16:26 Line 76   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      25-10-2008 16:26 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 16:26 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 16:26 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 16:26 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 16:26 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     25-10-2008 16:26 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 16:26 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2']]
+DEBUG     25-10-2008 16:26 Line 72   p2p.identifyClients : clientList: ['192.168.1.2']
+DEBUG     25-10-2008 16:26 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 16:26 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:26 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     25-10-2008 16:26 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     25-10-2008 16:26 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     25-10-2008 16:26 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:26 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 16:26 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     25-10-2008 16:26 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 16:26 Line 38   host.extractUserID   : UserID Known: ashokj
+
+DEBUG     25-10-2008 16:26 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     25-10-2008 16:26 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 16:26 Line 101  host.existsUser      : User seen in this session
+INFO      25-10-2008 16:26 Line 76   p2p.getHubFiles     : Getting File List for HUB: 192.168.1.2
+INFO      25-10-2008 16:26 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 16:26 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 16:26 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 16:26 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 16:26 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 192.168.1.2
+DEBUG     25-10-2008 16:26 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 16:26 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     25-10-2008 16:26 Line 72   p2p.identifyClients : clientList: []
+DEBUG     25-10-2008 16:26 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 16:26 Line 44   p2p.dcpp            : Adding hub information
+INFO      25-10-2008 16:26 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 16:26 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 16:26 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 16:26 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 16:26 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 16:26 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 16:26 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 16:26 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 16:26 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 16:26 Line 61   host.getHostsFromDB  : Found existing 14 hosts
+DEBUG     25-10-2008 16:26 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 16:26 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 16:26 Line 109  netscout.report          : len(hosts):14
+INFO      25-10-2008 17:41 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:41 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:41 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:41 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:41 Line 64   utils.readConfig      : Reading Configuration Parameters
+WARNING   25-10-2008 17:41 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     25-10-2008 17:41 Line 149  netscout.initDB          : Deleting database file
+DEBUG     25-10-2008 17:41 Line 151  netscout.initDB          : Creating new db file
+INFO      25-10-2008 17:42 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:42 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:42 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:42 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:42 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:42 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   25-10-2008 17:42 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     25-10-2008 17:42 Line 149  netscout.initDB          : Deleting database file
+DEBUG     25-10-2008 17:42 Line 151  netscout.initDB          : Creating new db file
+INFO      25-10-2008 17:43 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:43 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:43 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:43 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:43 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:43 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   25-10-2008 17:43 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     25-10-2008 17:43 Line 149  netscout.initDB          : Deleting database file
+DEBUG     25-10-2008 17:43 Line 151  netscout.initDB          : Creating new db file
+INFO      25-10-2008 17:43 Line 157  netscout.initDB          : Database initialized successfully
+ERROR     25-10-2008 17:43 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      25-10-2008 17:43 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:43 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:43 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:43 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:43 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:43 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   25-10-2008 17:43 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     25-10-2008 17:43 Line 149  netscout.initDB          : Deleting database file
+DEBUG     25-10-2008 17:43 Line 151  netscout.initDB          : Creating new db file
+INFO      25-10-2008 17:43 Line 157  netscout.initDB          : Database initialized successfully
+ERROR     25-10-2008 17:43 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      25-10-2008 17:43 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:43 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:43 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:43 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:43 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 17:43 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:43 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 17:43 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 17:43 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 17:43 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 17:43 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 17:43 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 17:43 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 17:43 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 17:43 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:43 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     25-10-2008 17:43 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:43 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      25-10-2008 17:43 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 17:43 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 17:43 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 17:44 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 17:44 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 17:44 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1'], ['411']]
+DEBUG     25-10-2008 17:44 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 17:44 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     25-10-2008 17:44 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     25-10-2008 17:44 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     25-10-2008 17:44 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 17:44 Line 103  host.existsUser      : User not been seen in this session
+INFO      25-10-2008 17:44 Line 76   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      25-10-2008 17:44 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 17:44 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 17:44 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 17:44 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 17:44 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     25-10-2008 17:44 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 17:44 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     25-10-2008 17:44 Line 72   p2p.identifyClients : clientList: []
+DEBUG     25-10-2008 17:44 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 17:44 Line 44   p2p.dcpp            : Adding hub information
+INFO      25-10-2008 17:44 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:44 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:44 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:44 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:44 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 17:44 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:44 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 17:44 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 17:44 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 17:44 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 17:44 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 17:44 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:44 Line 61   host.getHostsFromDB  : Found existing 1 hosts
+DEBUG     25-10-2008 17:44 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:44 Line 76   host.getUsersFromDB  : Found existing 1 users
+INFO      25-10-2008 17:44 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 17:44 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 17:44 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 17:44 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 17:44 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 17:44 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      25-10-2008 17:44 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:44 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:44 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:44 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:44 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:44 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 17:44 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:44 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 17:44 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 17:44 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 17:44 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 17:44 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 17:44 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:44 Line 61   host.getHostsFromDB  : Found existing 1 hosts
+DEBUG     25-10-2008 17:44 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:44 Line 76   host.getUsersFromDB  : Found existing 1 users
+INFO      25-10-2008 17:44 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 17:44 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 17:44 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 17:44 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 17:44 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 17:44 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      25-10-2008 17:44 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:44 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:44 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:44 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:44 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:44 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   25-10-2008 17:44 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     25-10-2008 17:44 Line 149  netscout.initDB          : Deleting database file
+DEBUG     25-10-2008 17:44 Line 151  netscout.initDB          : Creating new db file
+INFO      25-10-2008 17:44 Line 157  netscout.initDB          : Database initialized successfully
+ERROR     25-10-2008 17:44 Line 68   netscout.processArgs     : Specify one of '-i', '-r' or -u mandatory options
+INFO      25-10-2008 17:44 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:44 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:44 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:44 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:44 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 17:44 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 17:44 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:44 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 17:44 Line 190  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 17:44 Line 193  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 17:44 Line 200  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 17:44 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 17:44 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 17:44 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:44 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     25-10-2008 17:44 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:44 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      25-10-2008 17:44 Line 221  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 17:44 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 17:44 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 17:45 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 17:45 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 17:45 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1'], ['411']]
+DEBUG     25-10-2008 17:45 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 17:45 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     25-10-2008 17:45 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     25-10-2008 17:45 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     25-10-2008 17:45 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 17:45 Line 103  host.existsUser      : User not been seen in this session
+INFO      25-10-2008 17:45 Line 76   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      25-10-2008 17:45 Line 86   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 17:45 Line 88   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 17:45 Line 100  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 17:45 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 17:45 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     25-10-2008 17:45 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 17:45 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2', 'Softy\\Jetaudio6.26\\skins\\Musicsystem64\\Musicsystem64.jsk.3815856']]
+DEBUG     25-10-2008 17:45 Line 72   p2p.identifyClients : clientList: ['192.168.1.2', 'Softy\\Jetaudio6.26\\skins\\Musicsystem64\\Musicsystem64.jsk.3815856']
+DEBUG     25-10-2008 17:45 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 17:45 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 17:45 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     25-10-2008 17:45 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     25-10-2008 17:45 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     25-10-2008 17:45 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 17:45 Line 103  host.existsUser      : User not been seen in this session
+DEBUG     25-10-2008 17:45 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 17:45 Line 40   host.extractUserID   : Obtaining User id for: Softy\Jetaudio6.26\skins\Musicsystem64\Musicsystem64.jsk.3815856
+DEBUG     25-10-2008 17:45 Line 41   host.extractUserID   : Scanning HTTP requests for : Softy\Jetaudio6.26\skins\Musicsystem64\Musicsystem64.jsk.3815856
+DEBUG     25-10-2008 17:45 Line 110  host.addHost         : adding hostSofty\Jetaudio6.26\skins\Musicsystem64\Musicsystem64.jsk.3815856
+DEBUG     25-10-2008 17:45 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     25-10-2008 17:45 Line 101  host.existsUser      : User seen in this session
+DEBUG     25-10-2008 17:45 Line 44   p2p.dcpp            : Adding hub information
+INFO      25-10-2008 17:45 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:45 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:45 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:45 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:45 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 17:45 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:45 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 17:45 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 17:45 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:45 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 17:45 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:45 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 17:45 Line 109  netscout.report          : len(hosts):3
+INFO      25-10-2008 17:46 Line 168  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 17:46 Line 174  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 17:46 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 17:46 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 17:46 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 17:46 Line 145  netscout.initDB          : Using existing db file
+INFO      25-10-2008 17:46 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 17:46 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 17:46 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 17:46 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 17:46 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 17:46 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 17:46 Line 109  netscout.report          : len(hosts):3
+INFO      25-10-2008 18:57 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 18:57 Line 175  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 18:57 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 18:57 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 18:57 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     25-10-2008 18:57 Line 146  netscout.initDB          : Using existing db file
+INFO      25-10-2008 18:57 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     25-10-2008 18:57 Line 106  netscout.report          : reporting findings
+DEBUG     25-10-2008 18:57 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 18:57 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 18:57 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 18:57 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     25-10-2008 18:57 Line 109  netscout.report          : len(hosts):3
+INFO      25-10-2008 18:57 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     25-10-2008 18:57 Line 175  netscout.setupLog        : Screen logging on
+INFO      25-10-2008 18:57 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  25-10-2008 18:57 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      25-10-2008 18:57 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      25-10-2008 18:57 Line 52   netscout.processArgs     : Detailed Screen logging on
+DEBUG     25-10-2008 18:57 Line 146  netscout.initDB          : Using existing db file
+INFO      25-10-2008 18:57 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     25-10-2008 18:57 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     25-10-2008 18:57 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     25-10-2008 18:57 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     25-10-2008 18:57 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     25-10-2008 18:57 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     25-10-2008 18:57 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     25-10-2008 18:57 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     25-10-2008 18:57 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     25-10-2008 18:57 Line 61   host.getHostsFromDB  : Found existing 3 hosts
+DEBUG     25-10-2008 18:57 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     25-10-2008 18:57 Line 76   host.getUsersFromDB  : Found existing 2 users
+INFO      25-10-2008 18:57 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     25-10-2008 18:57 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     25-10-2008 18:57 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     25-10-2008 18:58 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     25-10-2008 18:58 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     25-10-2008 18:58 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.1.1'], ['411']]
+DEBUG     25-10-2008 18:58 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     25-10-2008 18:58 Line 40   host.extractUserID   : Obtaining User id for: 10.2.1.1
+DEBUG     25-10-2008 18:58 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.1.1
+DEBUG     25-10-2008 18:58 Line 110  host.addHost         : adding host10.2.1.1
+DEBUG     25-10-2008 18:58 Line 89   host.existsHost      : Host seen in this session
+DEBUG     25-10-2008 18:58 Line 101  host.existsUser      : User seen in this session
+INFO      25-10-2008 18:58 Line 78   p2p.getHubFiles     : Getting File List for HUB: 10.2.1.1
+INFO      25-10-2008 18:58 Line 88   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     25-10-2008 18:58 Line 90   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     25-10-2008 18:58 Line 102  p2p.getHubFiles     : videoList: []
+DEBUG     25-10-2008 18:58 Line 66   p2p.identifyClients : Scanning for P2P clients
+DEBUG     25-10-2008 18:58 Line 67   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.1.1
+DEBUG     25-10-2008 18:58 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     25-10-2008 18:58 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     25-10-2008 18:58 Line 74   p2p.identifyClients : clientList: []
+DEBUG     25-10-2008 18:58 Line 41   p2p.dcpp            : Adding client information
+DEBUG     25-10-2008 18:58 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 08:17 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:17 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:17 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:17 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:17 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:17 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:17 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:17 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:17 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:17 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:17 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:17 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:17 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:17 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:17 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:17 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:17 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:17 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:17 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:17 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:17 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:17 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:17 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:17 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:17 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:18 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:19 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:19 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      26-10-2008 08:19 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:19 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:19 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:19 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:19 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:19 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:19 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:19 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:19 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:19 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:19 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:19 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:19 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:19 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:19 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:19 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:19 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:19 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:19 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:19 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:19 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:19 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:19 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:19 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:19 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:19 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:19 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:19 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      26-10-2008 08:20 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:20 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:20 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:20 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:20 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:20 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:20 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:20 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:20 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:20 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:20 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:20 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:20 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:20 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:20 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:20 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:20 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:20 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:20 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:20 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:20 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:20 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:20 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:20 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:20 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:20 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:20 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:20 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      26-10-2008 08:41 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:41 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:41 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:41 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:41 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:41 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:41 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:41 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:41 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:41 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:41 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:41 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:41 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:41 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:41 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:41 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:41 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:41 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:41 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:41 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:41 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:41 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:41 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:41 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:41 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:41 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:41 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:41 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [[], []]
+INFO      26-10-2008 08:45 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:45 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:45 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:45 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:45 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:45 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:45 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:45 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:45 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:45 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:45 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:45 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:45 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:45 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:45 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:45 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:45 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:45 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:45 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:45 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:45 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:45 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:45 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:45 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:45 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:45 Line 62   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:45 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:45 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47'], ['411']]
+DEBUG     26-10-2008 08:45 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 08:45 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 08:45 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 08:45 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 08:45 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 08:45 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 08:45 Line 81   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 08:45 Line 91   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 08:45 Line 93   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 08:45 Line 105  p2p.getHubFiles     : videoList: ['iit_on_italian_tv.mpg', 'italiantomalta.mp3', 'help.h1.jpg', 'help.h2.jpg', 's17e08 - the italian bob.avi']
+DEBUG     26-10-2008 08:45 Line 69   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 08:45 Line 70   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 08:46 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 08:46 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     26-10-2008 08:46 Line 77   p2p.identifyClients : clientList: []
+DEBUG     26-10-2008 08:46 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 08:46 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 08:46 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:46 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:46 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:46 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:46 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 08:46 Line 146  netscout.initDB          : Using existing db file
+INFO      26-10-2008 08:46 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 08:46 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 08:46 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:46 Line 61   host.getHostsFromDB  : Found existing 1 hosts
+DEBUG     26-10-2008 08:46 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:46 Line 76   host.getUsersFromDB  : Found existing 1 users
+DEBUG     26-10-2008 08:46 Line 109  netscout.report          : len(hosts):1
+INFO      26-10-2008 08:51 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:51 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:51 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:51 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:51 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:51 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:51 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:51 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:51 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:51 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:51 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:51 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:51 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:51 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:51 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:51 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:51 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:51 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:51 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:51 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:51 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:51 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:51 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:51 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:51 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:51 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:51 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:51 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47'], ['411']]
+DEBUG     26-10-2008 08:51 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 08:51 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 08:51 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 08:51 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 08:51 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 08:51 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 08:51 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 08:51 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 08:51 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 08:51 Line 106  p2p.getHubFiles     : videoList: ["the wonder years - 3x11 - don't you know anything about women.avi", 'the wonder years - 6x19 - the little women.avi', 'santana - black magic women.mp3', '11 - dirty women.mp3', '08 - dirty women.mp3', 'what women want.avi', 'conversations.with.other.women.2005.dvdrip.deepak.avi', '1280.jpg', 'elabhatt1.wmv', 'elabhatt2.wmv', 'the.women(2008).cam.xvid@aswani.avi', 'rainy day women nos. 12 & 35.mp3', "who said women can't park.wmv", 'whywomenhatesports.wmv', 'mltr - wild women.mp3', 'its must have beem love (pretty women).mp3', 'lady in red (women in red).mp3', '499 -  best songs of all time - bob dylan - rainy day women #12 & 35.mp3', 'banned commercials - comedy - why women need men (1).mpg', 'zoom tv - red.hot.countdown - most desirable women.avi', 'women1.png']
+DEBUG     26-10-2008 08:51 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 08:51 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+INFO      26-10-2008 08:52 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:52 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:52 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:52 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:52 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:52 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:52 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:52 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:52 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:52 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:52 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:52 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:52 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:52 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:52 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:52 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:52 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:52 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:52 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:52 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:52 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:52 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:52 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:52 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:52 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:52 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:52 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:52 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47'], ['411']]
+DEBUG     26-10-2008 08:52 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 08:52 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 08:52 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 08:52 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 08:52 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 08:52 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 08:52 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 08:52 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 08:52 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 08:52 Line 106  p2p.getHubFiles     : videoList: ['06 pretty woman - shankar & ravi rags khote.mp3', 'pamelaconnbeall & susanhagennipp - 54 there was an old woman.mp3', 'pamelaconnbeall & susanhagennipp - 54 there was an old woman.mp3', 'scent.of.a.woman.(1992).avi', 'woman_man.jpg', 'seinfeld - 6x04 - the chinese woman.avi', '108-black magic woman-gypsy queen.mp3', '01 - black magic woman.mp3', '02 - persuation.mp3', 'have you ever really loved a woman.mp3', '04 - just like a woman.mp3', '10.  peggy lee - a woman alone with the blues.mp3', '10 - a woman is a sometime thing.mp3', '07 - bess, you is my woman now.mp3', '10. strawberry woman.mp3', '096) rolling stones - honky tonk woman.mp3', '05 - strange kind of woman.mp3', '12 - woman from tokyo.mp3', 'why_woman_hate_sports.wmv', '16 - woman in love.mp3', 'woman_man.jpg', '06 preety woman.mp3', 'scent of a woman.avi', 'it must have been love (pretty woman) - roxette.mp3', 'pretty woman - roy orbison (pretty woman).mp3', '01 - john lennon - woman.mp3', '06 - tavares - more than a woman.mp3']
+DEBUG     26-10-2008 08:52 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 08:52 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 08:52 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 08:52 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     26-10-2008 08:52 Line 78   p2p.identifyClients : clientList: []
+DEBUG     26-10-2008 08:52 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 08:52 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 08:53 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:53 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:53 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:53 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:53 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 08:53 Line 146  netscout.initDB          : Using existing db file
+INFO      26-10-2008 08:53 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 08:53 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 08:53 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:53 Line 61   host.getHostsFromDB  : Found existing 1 hosts
+DEBUG     26-10-2008 08:53 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:53 Line 76   host.getUsersFromDB  : Found existing 1 users
+DEBUG     26-10-2008 08:53 Line 109  netscout.report          : len(hosts):1
+INFO      26-10-2008 08:54 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:54 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:54 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:54 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:54 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 08:54 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 08:54 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 08:54 Line 150  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 08:54 Line 152  netscout.initDB          : Creating new db file
+INFO      26-10-2008 08:54 Line 158  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 08:54 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 08:54 Line 191  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 08:54 Line 191  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 08:54 Line 191  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 08:54 Line 194  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 08:54 Line 201  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 08:54 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 08:54 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 08:54 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:54 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 08:54 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:54 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 08:54 Line 222  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 08:54 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 08:54 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 08:54 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 08:54 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 08:54 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47'], ['411']]
+DEBUG     26-10-2008 08:54 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 08:54 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 08:54 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 08:54 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 08:54 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 08:54 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 08:54 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 08:54 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 08:54 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 08:54 Line 106  p2p.getHubFiles     : videoList: ['13-all these things from a loving father.mp3', "07 let's grow things.mp3", 'feynman - the pleasure of finding things out - horizon (1981).avi', 'x-files_-_7x17_-_all_things.avi', 'things-labels.gif', 'things-shoeboxes.gif', 'somethings gotta give.avi', 'dizzy gillespie - all the things you are.mp3', '10. just one of those things.mp3', '20 just one of those things.mp3', '(02) [pat metheny] all the things you are.mp3', '(16) the lord of the rings - the end of all things.wma', '09 - where the wild things are.mp3', '08. favorite things.mp3', '22 - better things.mp3', 'nsync nothings gonna change my love for you.mp3', 'nine_inch_nails_-_01_-_slipping_away.mp3', 'wild things unrated (1998) dvdrip.imperator.avi', '12-the little things give you away.mp3']
+DEBUG     26-10-2008 08:54 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 08:54 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 08:55 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 08:55 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2.']]
+DEBUG     26-10-2008 08:55 Line 78   p2p.identifyClients : clientList: ['192.168.1.2.']
+DEBUG     26-10-2008 08:55 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 08:55 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 08:55 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2.
+DEBUG     26-10-2008 08:55 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2.
+DEBUG     26-10-2008 08:55 Line 110  host.addHost         : adding host192.168.1.2.
+DEBUG     26-10-2008 08:55 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 08:55 Line 103  host.existsUser      : User not been seen in this session
+DEBUG     26-10-2008 08:55 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 08:55 Line 169  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 08:55 Line 175  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 08:55 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 08:55 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 08:55 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 08:55 Line 146  netscout.initDB          : Using existing db file
+INFO      26-10-2008 08:55 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 08:55 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 08:55 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 08:55 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 08:55 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 08:55 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 08:55 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:15 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:15 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:15 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:15 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:15 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:15 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:15 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:15 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:15 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:15 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:15 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:15 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:15 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:16 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:16 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:16 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:16 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:16 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:16 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:16 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:16 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:16 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:16 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:16 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:16 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:16 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:16 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:16 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:16 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:16 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:16 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:16 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:16 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:16 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:16 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:16 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:16 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:16 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:16 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:19 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:19 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:19 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:19 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:19 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:19 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:19 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:19 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:19 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:19 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:19 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:19 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:19 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:24 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:24 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:24 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:24 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:24 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 09:24 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 09:24 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 09:24 Line 152  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 09:24 Line 154  netscout.initDB          : Creating new db file
+INFO      26-10-2008 09:24 Line 160  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 09:24 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 09:24 Line 193  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 09:24 Line 193  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 09:24 Line 193  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 09:24 Line 196  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 09:24 Line 203  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 09:24 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 09:24 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 09:24 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:24 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 09:24 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:24 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 09:24 Line 224  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 09:24 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 09:24 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 09:24 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 09:24 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 09:24 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47'], ['411']]
+DEBUG     26-10-2008 09:24 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:24 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 09:24 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 09:24 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 09:24 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:24 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 09:24 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 09:24 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:24 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:24 Line 106  p2p.getHubFiles     : videoList: ['10 - kylie - someday.mp3', 'someday.mp3', '09_-_thomas_newman_-_someday_sweetheart_-_the_charleston_chasers.mp3', "cross road - 03 - someday i'll be saturday night.mp3", 'someday.mp3', 'nickelback - someday.mpeg', 'michael learns to rock_someday .mp3', 'britney spears - someday [hv].avi', '20 - someday never comes.mp3', 'someday out of the blue.mp3', 'someday.mp3', 'someday.mp3', 'flipsyde - someday.avi', 'someday.mp3', 'soundtrack_-_02_-_someday_out_of_the_blue.mp3', '03 - someday my prince will come.mp3', 'mltr - someday.mp3', 'someday soon.mp3', '07-audioslave-somedays.mp3', '12- someday.mp3', "someday we'll know - (with mandy moorejonathan foreman).[.h.v].mp3"]
+DEBUG     26-10-2008 09:24 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:24 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 09:25 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:25 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2']]
+DEBUG     26-10-2008 09:25 Line 78   p2p.identifyClients : clientList: ['192.168.1.2']
+DEBUG     26-10-2008 09:25 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:25 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:25 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     26-10-2008 09:25 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     26-10-2008 09:25 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     26-10-2008 09:25 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:25 Line 103  host.existsUser      : User not been seen in this session
+DEBUG     26-10-2008 09:25 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 09:25 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:25 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:25 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:25 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:25 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:25 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:25 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:25 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:25 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:25 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:25 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:25 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:25 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:25 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:25 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:25 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:25 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:25 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:25 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:25 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:25 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:25 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:25 Line 61   host.getHostsFromDB  : Found existing 2 hosts
+DEBUG     26-10-2008 09:25 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:25 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:25 Line 109  netscout.report          : len(hosts):2
+INFO      26-10-2008 09:26 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:26 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:26 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:26 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:26 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 09:26 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 09:26 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 09:26 Line 152  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 09:26 Line 154  netscout.initDB          : Creating new db file
+INFO      26-10-2008 09:26 Line 160  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 09:26 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 09:26 Line 193  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 09:26 Line 193  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 09:26 Line 193  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 09:26 Line 196  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 09:26 Line 203  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 09:26 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 09:26 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 09:26 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:26 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 09:26 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:26 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 09:26 Line 224  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 09:26 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 09:26 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 09:27 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 09:27 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 09:27 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47', '10.2.206.43', '10.3.203.63'], ['411', '411', '411']]
+DEBUG     26-10-2008 09:27 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:27 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 09:27 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 09:27 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 09:27 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:27 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 09:27 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 09:27 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:27 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:27 Line 106  p2p.getHubFiles     : videoList: []
+DEBUG     26-10-2008 09:27 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:27 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 09:27 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:27 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     26-10-2008 09:27 Line 78   p2p.identifyClients : clientList: []
+DEBUG     26-10-2008 09:27 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:27 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     26-10-2008 09:27 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:27 Line 40   host.extractUserID   : Obtaining User id for: 10.2.206.43
+DEBUG     26-10-2008 09:27 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.206.43
+DEBUG     26-10-2008 09:27 Line 110  host.addHost         : adding host10.2.206.43
+DEBUG     26-10-2008 09:27 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:27 Line 101  host.existsUser      : User seen in this session
+INFO      26-10-2008 09:27 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.206.43
+INFO      26-10-2008 09:27 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:27 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:27 Line 106  p2p.getHubFiles     : videoList: []
+DEBUG     26-10-2008 09:27 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:27 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.206.43
+DEBUG     26-10-2008 09:27 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:27 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     26-10-2008 09:27 Line 78   p2p.identifyClients : clientList: []
+DEBUG     26-10-2008 09:27 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:27 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     26-10-2008 09:27 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:27 Line 40   host.extractUserID   : Obtaining User id for: 10.3.203.63
+DEBUG     26-10-2008 09:27 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.3.203.63
+DEBUG     26-10-2008 09:27 Line 110  host.addHost         : adding host10.3.203.63
+DEBUG     26-10-2008 09:27 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:27 Line 101  host.existsUser      : User seen in this session
+INFO      26-10-2008 09:27 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.3.203.63
+INFO      26-10-2008 09:27 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:27 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:27 Line 106  p2p.getHubFiles     : videoList: []
+DEBUG     26-10-2008 09:27 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:27 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.3.203.63
+DEBUG     26-10-2008 09:27 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:27 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [[]]
+DEBUG     26-10-2008 09:27 Line 78   p2p.identifyClients : clientList: []
+DEBUG     26-10-2008 09:27 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:27 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 09:28 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:28 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:28 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:28 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:28 Line 64   utils.readConfig      : Reading Configuration Parameters
+INFO      26-10-2008 09:28 Line 52   netscout.processArgs     : Detailed Screen logging on
+WARNING   26-10-2008 09:28 Line 59   netscout.processArgs     : Resetting database! All data and configuration will be lost!
+DEBUG     26-10-2008 09:28 Line 152  netscout.initDB          : Deleting database file
+DEBUG     26-10-2008 09:28 Line 154  netscout.initDB          : Creating new db file
+INFO      26-10-2008 09:28 Line 160  netscout.initDB          : Database initialized successfully
+INFO      26-10-2008 09:28 Line 79   netscout.processArgs     : netscout passive mode
+DEBUG     26-10-2008 09:28 Line 193  netscout.checkPrereqs    : tcpdump check ok
+DEBUG     26-10-2008 09:28 Line 193  netscout.checkPrereqs    : tshark check ok
+DEBUG     26-10-2008 09:28 Line 193  netscout.checkPrereqs    : ngrep check ok
+DEBUG     26-10-2008 09:28 Line 196  netscout.checkPrereqs    : Checking if root permissions available
+DEBUG     26-10-2008 09:28 Line 203  netscout.checkPrereqs    : ROOT permissions available
+DEBUG     26-10-2008 09:28 Line 29   netscout.createDirStruct : Deleting exisitng data directories
+DEBUG     26-10-2008 09:28 Line 31   netscout.createDirStruct : Creating data directories
+DEBUG     26-10-2008 09:28 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:28 Line 61   host.getHostsFromDB  : Found existing 0 hosts
+DEBUG     26-10-2008 09:28 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:28 Line 76   host.getUsersFromDB  : Found existing 0 users
+INFO      26-10-2008 09:28 Line 224  netscout.main            : Initialing DC++ P2P scouting
+DEBUG     26-10-2008 09:28 Line 59   p2p.identifyDCPPHUBs : Looking for DC++ HUBS
+DEBUG     26-10-2008 09:28 Line 60   p2p.identifyDCPPHUBs : Listening for MyINFO packets
+DEBUG     26-10-2008 09:28 Line 63   p2p.identifyDCPPHUBs : Obtaining DC++ HUBS IP and PORT
+DEBUG     26-10-2008 09:28 Line 18   utils.fileToArray     : Converting file :netdata/p2p/hub_cols to list data
+DEBUG     26-10-2008 09:28 Line 34   utils.fileToArray     : For file : netdata/p2p/hub_cols Data returned: [['10.2.2.47', '10.2.206.43', '10.3.203.63'], ['411', '411', '411']]
+DEBUG     26-10-2008 09:28 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:28 Line 40   host.extractUserID   : Obtaining User id for: 10.2.2.47
+DEBUG     26-10-2008 09:28 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.2.47
+DEBUG     26-10-2008 09:28 Line 110  host.addHost         : adding host10.2.2.47
+DEBUG     26-10-2008 09:28 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:28 Line 103  host.existsUser      : User not been seen in this session
+INFO      26-10-2008 09:28 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.2.47
+INFO      26-10-2008 09:29 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:29 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:29 Line 106  p2p.getHubFiles     : videoList: ['westlife - when looking like that.mp3', '02 - of the outside looking in.mp3', '13 looking back (reflections).mp3', "i still haven't found what i am looking for.mp3", "i still haven't found what i'm looking for(li).mp3", "093) u2 - i still haven't found what i'm looking for.mp3", 'megadeth - killing...-7- looking down the cross.mp3', "093) u2 - i still haven't found what i'm looking for.mp3", 'the wonder years - 4x23 - the wonder years, looking back.avi', '7. looking for today.mp3', '07 - looking down the cross.mp3', 'when you_re looking like th.mp3', "08 - i'm looking forward to joining you, finally.mp3", '02- looking glass.mp3', 'hawameinudatajaaye.mp3', '1x1.gif', 'butnback.gif', 'hawa mein udata jaaye.mp3', 'pedavi datani.mp3', 'data ek ram.mp3']
+DEBUG     26-10-2008 09:29 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:29 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.2.47
+DEBUG     26-10-2008 09:29 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:29 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2']]
+DEBUG     26-10-2008 09:29 Line 78   p2p.identifyClients : clientList: ['192.168.1.2']
+DEBUG     26-10-2008 09:29 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:29 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:29 Line 40   host.extractUserID   : Obtaining User id for: 192.168.1.2
+DEBUG     26-10-2008 09:29 Line 41   host.extractUserID   : Scanning HTTP requests for : 192.168.1.2
+DEBUG     26-10-2008 09:29 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     26-10-2008 09:29 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:29 Line 103  host.existsUser      : User not been seen in this session
+DEBUG     26-10-2008 09:29 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     26-10-2008 09:29 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:29 Line 40   host.extractUserID   : Obtaining User id for: 10.2.206.43
+DEBUG     26-10-2008 09:29 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.2.206.43
+DEBUG     26-10-2008 09:29 Line 110  host.addHost         : adding host10.2.206.43
+DEBUG     26-10-2008 09:29 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:29 Line 101  host.existsUser      : User seen in this session
+INFO      26-10-2008 09:29 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.2.206.43
+INFO      26-10-2008 09:30 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:30 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:30 Line 106  p2p.getHubFiles     : videoList: ['flag1.gif', 'flag3.gif', "12 - don't ask me no questions.mp3", '234 -  best songs of all time - moody blues - question.mp3', '09 - question everything.mp3', "12 - don't ask me no questions.mp3", 'question.png', 'question.png', 'question.png', 'msn_question.png', 'boston legal - 1x07 - questionable characters.prady.avi', 'dj merlin-21 questions remix.mp3', '08 honest questions.mp3', 'dialogue_one more question.mp3', '21 questions - 50 cent.mp3', 'soundtrack_-_03_-_without_question.mp3', 'question.gif', '234 -  best songs of all time - moody blues - question.mp3', "12 - don't ask me no questions.mp3", 'ask me no questions.mp3', '22. rhett miller - question.mp3', 'carry on - questions.mp3', 'questionicon.jpg', 'naruto - 025 this is it! the last stand, question #10.avi', '3dcom_3de_db2_question2nls.gif', '3dcom_3de_db2_questionnls.gif', '3dcom_3de_db2_question2nls.gif', '3dcom_3de_db2_questionnls.gif', '3dcom_3de_db2_question2nls.gif', '06 - questions interview (skit) - [rkmania.com].mp3', '234 -  best songs of all time - moody blues - question.mp3', '08 honest questions.mp3', '07 - system of a down - question!.mp3', '11  rihanna - question existing.mp3', 'dj merlin-21 questions remix.mp3', '0p1.gif', 'question.gif', 'question_icon.jpg', 'question.gif', 'question_small.gif', 'question_icon.jpg', '09_question_everything.mp3', '07 - system of a down - question!.mp3', '234 -  best songs of all time - moody blues - question.mp3', '09 - im the money.guessme.mp3', 'keep on calling (ft. p.money).mp3', 'abba - money money money.mp3', '09 - you never give me your money.mp3', '14_-_thomas_newman_-_dirty_money.mp3', 'bhadram becarefu lbrother.mp3', 'chakravarthiki.mp3', 'vaarevva_emi_facu.mp3', '062) pink floyd - money.mp3', "in the moneylender's temple - track 6.mp3", '01 the big money.mp3', '14 - the big money.mp3', '09 - the big money.mp3', '019 -  best songs of all time - pink floyd - money.mp3', '167 -  best songs of all time - dire straits - money for nothing.mp3', '323 -  best songs of all time - steve miller band - take the money and run.mp3', "that '70s show - 6x16 - man with money.avi", 'scrubs - 6x05 - my friend with money.am.avi', 'seinfeld - 8x12 - the money.avi', '01 - jai jai money .mp3', '02 - gustakh nigah.mp3', '03 - dil mein baji guitar.mp3', '04 - paisa paisa.mp3', 'money.jpg', 'abba gold-09 - money, money, money.mp3', '062) pink floyd - money.mp3', 'money.mp3', 'what do you do for money honey.mp3', 'you never give me your money.mp3', '10 money and fame.mp3', 'money.mp3', '02 money.mp3', '062) pink floyd - money.mp3', 'moneymouth.png', 'yahoo_moneyeyes.gif', '01-money_hai_toh_honey_hai-money_hai_toh_honey_hai.mp3', '02-money_hai_toh_honey_hai-awaara_dil.mp3', '03-money_hai_toh_honey_hai-chhuriyaan.mp3', '04-money_hai_toh_honey_hai-ta_na_na.mp3', 'the x-files - 3x19 - hell money.avi', '03 - ac-dc - what do you do for money honey.mp3', '03 - ac-dc - moneytalks.mp3', '65 - the notorious b.i.g. - mo money, mo problems (1997).mp3', 'n.w.a. - greatest hits - 15 - cash money (insert).mp3', '00apnasapnamoneymoney2006frontdjluvlg5.jpg', '04-petey_pablo-show_me_tha_money.mp3', '65 - the notorious b.i.g. - mo money, mo problems (1997).mp3', '03-50_cent-this_is_50_(produced_by_black_jeruz_and_sha_money_xl).mp3', '09 - fantasy (feat. money).mp3', 'akon - 10 - keep on calling (ft. p.money).mp3', 'pink floyed - money lust.mp3', '05 - money.mp3', 'workingmodelmoneybowl.avi', '06 - a flame for freedom.mp3', '01 - break free.mp3', '02 - break free  (remix).mp3', 'break free  (krazzy 4).mp3', 'break free- remix  (krazzy 4).mp3', 'queen-iwanttobreakfree.mp3', '12 - run free.mp3', 'enrique iglesias  seven - free.mp3', 'the beatles - free as a bird.mp3', 'billy taylor - i wish i knew how it would feel to be free.mp3', 'break free ~ krazzy 4 hrithik(sappo).avi', 'wallpaper 98_freedom_begins_here_1152x864.jpg', 'free_5.jpg', 'free_1.jpg', 'free_6.jpg', '[richie havens] freedom.mp3', '003) lynyrd skynyrd - freebird.mp3', '02 freewill.mp3', 'freewill (live).mp3', 'dragonball z - freeza vs goku.mp3', '00716_freeze_1280x1024.jpg', '01005_freeze_1280x1024.jpg', "that '70s show - 6x05 - i'm free.avi", '1x02.free goat.avi']
+DEBUG     26-10-2008 09:30 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:30 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.2.206.43
+DEBUG     26-10-2008 09:30 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:30 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2']]
+DEBUG     26-10-2008 09:30 Line 78   p2p.identifyClients : clientList: ['192.168.1.2']
+DEBUG     26-10-2008 09:30 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:30 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:30 Line 38   host.extractUserID   : UserID Known: ashokj
+
+DEBUG     26-10-2008 09:30 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     26-10-2008 09:30 Line 89   host.existsHost      : Host seen in this session
+DEBUG     26-10-2008 09:30 Line 101  host.existsUser      : User seen in this session
+DEBUG     26-10-2008 09:30 Line 44   p2p.dcpp            : Adding hub information
+DEBUG     26-10-2008 09:30 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:30 Line 40   host.extractUserID   : Obtaining User id for: 10.3.203.63
+DEBUG     26-10-2008 09:30 Line 41   host.extractUserID   : Scanning HTTP requests for : 10.3.203.63
+DEBUG     26-10-2008 09:30 Line 110  host.addHost         : adding host10.3.203.63
+DEBUG     26-10-2008 09:30 Line 91   host.existsHost      : Host not been seen in this session
+DEBUG     26-10-2008 09:30 Line 101  host.existsUser      : User seen in this session
+INFO      26-10-2008 09:30 Line 82   p2p.getHubFiles     : Getting File List for HUB: 10.3.203.63
+INFO      26-10-2008 09:30 Line 92   p2p.getHubFiles     : Searching for requested file extensions
+DEBUG     26-10-2008 09:30 Line 94   p2p.getHubFiles     : extensions: ['.mpg', '.mpeg', '.avi', '.mov', '.rm', '.wmv', '.mp3', '.wma', '.jpeg', '.jpg', '.png', '.gif']
+DEBUG     26-10-2008 09:30 Line 106  p2p.getHubFiles     : videoList: ['midp_networking-4.gif', 'networkmonitor5.gif', 'networkmonitor-sms8.gif', 'we can work it out.mp3', 'nina simone - work song.mp3', '94 - working man - rush.mp3', 'we can work it out.mp3', '- men at work - i come from a land down under.mp3', 'men at work - electric avenue.mp3', 'lets work it out -- raghav.mp3', 'missy elliott--work it.mp3', 'nelly feat justin timberlake - work it.mp3', 'workssssscorrected.jpg', 'samaritangirlr1artworkpic.jpg', '094) rush - working man.mp3', '02-homework.mp3', '05 - nice work if you can get it.mp3', '21 nice work if you can get it.mp3', 'nice work if you can get it.mp3', 'we can work it out.mp3', "09 - workin' for mca.mp3", 'great metal covers 17 - 15 - soilwork - burn (deep purple).mp3', 'anatomy_ant_trap_sm.gif', 'bentlat.jpg', 'dbsp.jpg', '1b.jpg', '094) rush - working man.mp3', '03 we can work it out.mp3', '11 we can work it out.mp3', 'buddhist_monk_work_for_aid_victims_in_thailand_1.avi', 'fireworks.jpg', '1_dying hard work.jpg', 'pixels copy.jpg', '05 - millworker [james taylor, ev solo, grand rapids].mp3', 'back.jpg', 'front.jpg', 'inlay.jpg', '98 - missy elliott - work it (2002).mp3', 'artwork.jpg', 'samaritangirlr1artworkpic.jpg', 'jumptowerwork3g.jpg', 'my network places.png', '01 - painkiller.mp3', 'network blitz bkgrd.gif', 'v_working.gif', '14 - deadly work.mp3', "johann sebastian bach-from the 'little organ book'- christ lag in todesbanden (bwv 625).mp3", "johann sebastian bach-from the 'little organ book'- das alte jahr vergangen ist (bwv 614).mp3", "johann sebastian bach-from the 'little organ book'- der tag, der ist so freudenreich (bwv 605).mp3", 'a clockwork orange.(8.3).avi', 'xtreme-wrestling-network.com.wwe.the.legacy.of.stone.cold.steve.austin.dvd1.xvid.cd1.avi', 'xtreme-wrestling-network.com.wwe.the.legacy.of.stone.cold.steve.austin.dvd1.xvid.cd2.avi', 'xtreme-wrestling-network.com.wwe.the.legacy.of.stone.cold.steve.austin.dvd2.xvid.cd1.avi', 'xtreme-wrestling-network.com.wwe.the.legacy.of.stone.cold.steve.austin.dvd2.xvid.cd2.avi', 'syd field sw workshop.avi', 'uktownworkshop.mp3']
+DEBUG     26-10-2008 09:30 Line 70   p2p.identifyClients : Scanning for P2P clients
+DEBUG     26-10-2008 09:30 Line 71   p2p.identifyClients : Scanning for P2P clients for HUB: 10.3.203.63
+DEBUG     26-10-2008 09:30 Line 18   utils.fileToArray     : Converting file :netdata/p2p/client to list data
+DEBUG     26-10-2008 09:30 Line 34   utils.fileToArray     : For file : netdata/p2p/client Data returned: [['192.168.1.2']]
+DEBUG     26-10-2008 09:30 Line 78   p2p.identifyClients : clientList: ['192.168.1.2']
+DEBUG     26-10-2008 09:30 Line 41   p2p.dcpp            : Adding client information
+DEBUG     26-10-2008 09:30 Line 35   host.extractUserID   : Checking if User ID is already known
+DEBUG     26-10-2008 09:30 Line 38   host.extractUserID   : UserID Known: ashokj
+
+DEBUG     26-10-2008 09:30 Line 110  host.addHost         : adding host192.168.1.2
+DEBUG     26-10-2008 09:30 Line 89   host.existsHost      : Host seen in this session
+DEBUG     26-10-2008 09:30 Line 101  host.existsUser      : User seen in this session
+DEBUG     26-10-2008 09:30 Line 44   p2p.dcpp            : Adding hub information
+INFO      26-10-2008 09:31 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:31 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:31 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:31 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:31 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:31 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:31 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:31 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:31 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:31 Line 61   host.getHostsFromDB  : Found existing 4 hosts
+DEBUG     26-10-2008 09:31 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:31 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:31 Line 109  netscout.report          : len(hosts):4
+INFO      26-10-2008 09:31 Line 171  netscout.setupLog        : ==========Initiating netscout logging==========
+DEBUG     26-10-2008 09:31 Line 177  netscout.setupLog        : Screen logging on
+INFO      26-10-2008 09:31 Line 40   netscout.verInfo         : nescout version 1.0
+CRITICAL  26-10-2008 09:31 Line 41   netscout.verInfo         : Ensure you are root!
+INFO      26-10-2008 09:31 Line 64   utils.readConfig      : Reading Configuration Parameters
+DEBUG     26-10-2008 09:31 Line 148  netscout.initDB          : Using existing db file
+INFO      26-10-2008 09:31 Line 85   netscout.processArgs     : netscout report mode
+DEBUG     26-10-2008 09:31 Line 106  netscout.report          : reporting findings
+DEBUG     26-10-2008 09:31 Line 56   host.getHostsFromDB  : getting existing host info
+DEBUG     26-10-2008 09:31 Line 61   host.getHostsFromDB  : Found existing 4 hosts
+DEBUG     26-10-2008 09:31 Line 71   host.getUsersFromDB  : getting existing user info
+DEBUG     26-10-2008 09:31 Line 76   host.getUsersFromDB  : Found existing 2 users
+DEBUG     26-10-2008 09:31 Line 109  netscout.report          : len(hosts):4
