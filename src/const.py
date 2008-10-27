@@ -37,7 +37,7 @@ P2P_PORT_HUBID = 3
 
 ## Web domain table
 ## Unclassified websites
-UNCLASSED = -1 
+UNCLASSED = "unclassified" 
 
 ## P2P filelist. 
 ##Row id for row matching host activity id. 
