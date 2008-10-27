@@ -45,15 +45,6 @@ CREATE TABLE IF NOT EXISTS webdomain
 (
     domainID INTEGER PRIMARY KEY AUTOINCREMENT,
     domain TEXT,
-    catID INTEGER
+    category TEXT
 );
 
-CREATE TABLE IF NOT EXISTS domainCat
-(
-    catID INTEGER PRIMARY KEY AUTOINCREMENT,
-    catName TEXT,
-    blacklist BOOLEAN, -- O - not blacklisted, 1 - blacklisted
-    keywords TEXT
-);
-
-INSERT INTO domainCat VALUES (-1,"unclassified",0,"");

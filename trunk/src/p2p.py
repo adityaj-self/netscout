@@ -70,8 +70,8 @@ def identifyClients(hubIP,hostPort):
     logging.debug('Scanning for P2P clients')
     logging.debug('Scanning for P2P clients for HUB: '+hubIP)
     os.system("tcpdump -c "+getCfg("hubClient")+" -i "+getCfg("interface")\
-		+" 'src host "+hubIP+" and src port "+hostPort+"' > "+getCfg("clientFile1"))
-    os.system("cut -d ' ' -f5 "+getCfg("clientFile1")+" | sort -u | sed '/^$/d' | "\
+		+" 'src host "+hubIP+" and src port "+hostPort+"' > "+getCfg("clientFileTemp"))
+    os.system("cut -d ' ' -f5 "+getCfg("clientFileTemp")+" | sort -u | sed '/^$/d' | "\
 		    +"awk -F\".\" '{print $1\".\"$2\".\"$3\".\"$4}' > "+getCfg("clientFile"))
     clientHostData=utils.fileToArray(getCfg("clientFile"), const.CLNT_COL_CNT)
     clientIPList=clientHostData[0]

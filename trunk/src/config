@@ -21,10 +21,10 @@
 ## want to be performed. 
 
 ## Set to true if you want to check for DC++ p2p traffic
-dcppMode=true
+dcppMode=false
 
 ## Set to true if you want to check for http traffic
-httpMode=false
+httpMode=true
 
 ## Set to true if you want to do statistical analysis
 statMode=false
@@ -78,7 +78,7 @@ proxyAuth=true
 ## but it does offer video support so it may be marked as video streaming site.
 ## Adjust keywords and order to your requirement. 
 
-capture['Adult'] = ["sex","porn"]
+category['Adult'] = ["sex","porn"]
 category['Video'] = ["video","stream"]
 category['SocialNetworking'] = ["friends","network","meet"]
 
@@ -124,7 +124,7 @@ uidTshark=%(p2pDir)s/uid_tshark
 
 ## File where client data gets stored
 clientFile=%(p2pDir)s/client
-clientFile1=%(p2pDir)s/client1
+clientFileTemp=%(p2pDir)s/clientTemp
 
 ## 
 webActHostFile=%(httpDir)s/webacthost
