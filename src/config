@@ -78,10 +78,6 @@ proxyAuth=true
 ## but it does offer video support so it may be marked as video streaming site.
 ## Adjust keywords and order to your requirement. 
 
-category['Adult'] = ["sex","porn"]
-category['Video'] = ["video","stream"]
-category['SocialNetworking'] = ["friends","network","meet"]
-
 ###########################
 #Dump locations and format#
 ###########################
@@ -105,7 +101,7 @@ p2pDir=%(dataDir)s/p2p
 httpDir=%(dataDir)s/http
 
 ## HTTP request packets stored here
-webActFile=%(httpDir)%/webactivity
+webActFile=%(httpDir)s/webactivity
 
 ## Set file to hold MyINFO packets
 myinfoDump=%(p2pDir)s/myinfo
@@ -128,4 +124,11 @@ clientFileTemp=%(p2pDir)s/clientTemp
 
 ## 
 webActHostFile=%(httpDir)s/webacthost
+
+[CATEGORY]
+Adult = sex,porn
+Video = video,stream
+SocialNetworking = friends,network,meet
+News = news
+
 

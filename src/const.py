@@ -37,6 +37,8 @@ P2P_PORT_HUBID = 3
 
 ## Web domain table
 ## Unclassified websites
+CAT_NAME=0
+CAT_KEYWORD=1
 UNCLASSED = "unclassified" 
 
 ## P2P filelist. 

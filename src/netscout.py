@@ -89,17 +89,19 @@ def processArgs():
 
     if("-u" in paramList):
         logging.info("netscout web domain update mode")
-        http.domainUpdate()
         updateInd=paramList.index("-u")+1
         update=""
-        if (updateInd == len(paramList)-1):
+        if (updateInd <= len(paramList)-1):
             update=paramList[updateInd]
+	    logging.debug("update mode "+update)
             if (update == "all"):
                 logging.warning("Updating all web domains")
                 utils.setCfg("update", update)
-        else:
-            logging.info("Updating new web domains")
-            utils.setCfg("update", "")
+	    else:
+		logging.info("Updating new web domains")
+		utils.setCfg("update", "")
+        http.domainUpdate()
+	sys.exit()
 
 def initDB(oper):
     """

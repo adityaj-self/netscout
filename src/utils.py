@@ -5,6 +5,8 @@ import sqlite3
 import logging
 import ConfigParser
 import sys
+
+import const
 """
 Utility file
 """
@@ -57,6 +59,20 @@ def setCfg(param, value):
     """
     cfg[param]=value
 
+def getCategories():
+    logging.info("Reading Categories")
+    parser = ConfigParser.ConfigParser()
+    parser.optionxform = str
+    parser.readfp(open('config'))
+    catList = {} 
+    keyList = []
+    catData = parser.items('CATEGORY')
+    logging.debug(""+str(catData))
+    for x in range(len(catData)):
+	catList[catData[x][const.CAT_NAME]] = catData[x][const.CAT_KEYWORD].split(',')
+	logging.debug(""+str(catList))
+    return catList
+
 def readConfig():
     """
     Read the config file contents
@@ -66,5 +82,12 @@ def readConfig():
     parser.optionxform = str
     parser.readfp(open('config'))
     for x in parser.sections():
-        for y in parser.items(x):
-            cfg[y[0]] = y[1]
+	if (x == 'CATEGORY'):
+	    catTemp = dict(parser.items('CATEGORY'))
+	    category = catTemp
+	    logging.debug(""+str(category))
+	else:
+	    for y in parser.items(x):
+		cfg[y[0]] = y[1]
+    logging.debug(""+str(cfg))
+

@@ -9,7 +9,6 @@ import const
 import host
 
 dbDomains={} #domains in the db
-dbCategories={} #categories and their ids
 
 def getDomainInfo():
     conn = utils.connectDB()
@@ -76,35 +75,41 @@ def domainUpdate():
     domainList=[]
     conn=utils.connectDB()
     cur = conn.cursor()
-    p=const.UNCLASSED
+    p=(const.UNCLASSED,)
     urlList = ""
-    addCategorytoDB()
     if(utils.getCfg("update") == "all"):
         cur.execute("select * from webdomain");
     else:
-        cur.execute("select * from webdomain where catID = ?",p);
+        cur.execute("select * from webdomain where category = ?",p);
+    categories = utils.getCategories()
     domainList = cur.fetchall()
     for i in range(len(domainList)):
         url = domainList[i][const.NAME_IND]
 	if(url != ""):
 	    os.system("wget --quiet --level=1 --output-document="\
-			    +getCfg("httpDir")+"/"+url+" --tries=1 "+url)
-	    newCat = categoriseSite(url)
+			+utils.getCfg("httpDir")+"/"+url+" --tries=1 "+url)
+	    newCat = categoriseUrl(url,categories)
 	    ## Update category in DB
 	    t=(newCat,domainList[i][const.ID_IND],)
+	    logging.debug("t:"+str(t))
 	    cur.execute("update webdomain set category = ? where domainID = ?",t) 
     conn.close()
     logging.info(str(len(domainList))+" sites categoried/updated")
 
-def categoriseUrl(url):
-    os.system("sed -n -e '/<head>/,/<\/head>/p' <"+\
-		    +getCfg("httpDir")+"/"+url+" | sed -n -e '/<meta/,/>/p' >"+url)
-    fp=open("url")
+def categoriseUrl(url,categories):
+    logging.debug("Categorising: "+url)
+    urlLoc = utils.getCfg("httpDir")+"/"+url
+    os.system("sed -n -e '/<head>/,/<\/head>/p' <"\
+		    +urlLoc+" | sed -n -e '/<meta/,/>/p' >"\
+		    +urlLoc+".sed")
+    fp=open(urlLoc)
     metaData = fp.read()
-    for (cat,keyword) in config.category.items():
-	for word in keyword:
+    for (cat,key) in categories.items():
+	logging.debug("cat: "+cat+" keywords: "+str(key))
+	for word in key:
+	    logging.debug("in word:"+str(word))
 	    if word in metaData:
+		logging.debug("found word:"+str(word)+": returning cat: "+str(cat))
 		return cat	
-    return ""
-
+    return const.UNCLASSED
 
