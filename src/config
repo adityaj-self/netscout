@@ -29,6 +29,15 @@ httpMode=true
 ## Set to true if you want to do statistical analysis
 statMode=false
 
+## Set to true if you want to protect important resources (proxy,mail) 
+protectMode=false
+
+## Set to true if you want to do counter against offending hosts
+counterMode=false
+
+
+[DCPP]
+
 ##################################################
 # DC++ P2P (Unencrypted) specific configuration #
 ##################################################
@@ -58,6 +67,7 @@ multiWebCnt=100
 
 ext=.mpg,.mpeg,.avi,.mov,.rm,.wmv,.mp3,.wma,.jpeg,.jpg,.png,.gif
 
+[HTTP]
 #####################
 #HTTP Configuration #
 #####################
@@ -78,9 +88,40 @@ proxyAuth=true
 ## but it does offer video support so it may be marked as video streaming site.
 ## Adjust keywords and order to your requirement. 
 
-###########################
-#Dump locations and format#
-###########################
+## Enter name value pairs of categories and keywords 
+
+[CATEGORY]
+Adult = sex,porn
+Video = video,stream
+SocialNetworking = friends,network,meet
+News = news
+
+#############
+# Stats mode#
+#############
+[STAT]
+
+## number of packets to look for conections terminating on a host in order to raise alarm 
+connTo = 50
+## minimum number of conections terminating on a host in order to raise alarm 
+connToMin = 20
+bw = 0
+## ignore acivity to and from this host. eg, a proxy server 
+ignoreHost = netmon.iitb.ac.in
+
+[PROTECT]
+## Network resources that need to be protected
+impRes = netmon.iitb.ac.in, smtp.iitb.ac.in
+## number of packets to look for conections terminating on important hosts 
+prConnTo = 50
+## minimum number of conections terminating on a host in order to raise alarm 
+prConnToMin = 20
+
+
+[DUMP]
+#################
+#Dump locations #  
+#################
 
 
 ## Folder to hold data
@@ -99,6 +140,9 @@ p2pDir=%(dataDir)s/p2p
 
 ## HTTP data folder
 httpDir=%(dataDir)s/http
+
+## STAT data folder
+statDir=%(dataDir)s/stat
 
 ## HTTP request packets stored here
 webActFile=%(httpDir)s/webactivity
@@ -125,10 +169,6 @@ clientFileTemp=%(p2pDir)s/clientTemp
 ## 
 webActHostFile=%(httpDir)s/webacthost
 
-[CATEGORY]
-Adult = sex,porn
-Video = video,stream
-SocialNetworking = friends,network,meet
-News = news
-
+## 
+dstCountFile=%(statDir)s/dstCnt
 
