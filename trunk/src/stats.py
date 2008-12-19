@@ -13,7 +13,7 @@ def statActivity():
     #look for bandwidth usage
     #look for number of requests to specific hosts
     os.system("tcpdump -s0 -i "+getCfg("interface")\
-		+" 'dst not "+getCfg("ignoreHost")\+"'"\
+		+" 'dst not "+getCfg("ignoreHost")+"'"\
 		+" -c "+getCfg("connTo")+" -w - | "\
 		+" tshark -i - -T fields -e ip.dst |"\
 		+" sort > "+getCfg("dstCountFile"))
@@ -32,7 +32,7 @@ def protectResource():
     #look for bandwidth usage
     #look for number of requests to specific hosts
     os.system("tcpdump -s0 -i "+getCfg("interface")\
-		+" 'dst  "+getCfg("impRes")\+"'"\
+		+" 'dst  "+getCfg("impRes")+"'"\
 		+" -c "+getCfg("prConnTo")+" -w - | "\
 		+" tshark -i - -T fields -e ip.src |"\
 		+" sort > "+getCfg("srcCountFile"))
