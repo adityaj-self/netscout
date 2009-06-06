@@ -2,7 +2,6 @@
 %author - Aditya Joshi
 \documentclass[twocolumn]{article}
 \usepackage{graphicx}
-\pagestyle{empty}
 %set dimensions of columns, gap between columns, and paragraph indent 
 \setlength{\textheight}{8.75in}
 \setlength{\columnsep}{2.0pc}
@@ -31,9 +30,8 @@ minus3pt\let\@listi\@listI}
 \begin{document}
 %don't want date printed
 \date{}
-\pagestyle{empty}
 %make title bold and 14 pt font (Latex default is non-bold, 16pt) 
-\title{\Large\bf netscout - adaptive network monitoring and countering mechanism}
+\title{\Large\bf netscout - Adaptive Network Monitoring and Threat Countering Mechanism}
 \author{\begin{tabular}[t]{c@{\extracolsep{2em}}c} 
 Aditya Joshi & G Sivakumar\\
 Computer Science and Engineering & Computer Science and Engineering \\
@@ -44,15 +42,17 @@ aditya.joshi.2000@gmail.com & siva@cse.iitb.ac.in \end{tabular}}
 \subsection*{\centering Abstract}
 %IEEE allows italicized abstract
 {\em
-Networks have policies in place to ensure efficient and fair resource 
+Networks have policies in place to in order to ensure efficient and fair resource 
 utilization and protection of network installations. An effective monitoring and
-countering mechanism needs a complete picture of resource protection and utilization 
-,by monitoring network traffic and diverse activity logs, in order to act on time. 
+countering mechanism needs a complete picture of resource utilization and network
+activity in order to act on time. Such information is typically found in heterogeneous
+logs files.
 
 netscout is a python based network filtering, monitoring and countering mechanism driven by
-policies. Traffic is observed in real time, largely in a passive mode, and past and current user/host 
-activity information is used to make decisions about future traffic monitoring. 
-Such a 'predictive' model allows efficient information gathering and subsequent appropriate responses.
+policies. Network traffic is observed in real-time and largely in a passive mode. Decisions
+on future patterns of activity monitoring are done based on past and current user/host 
+network activity information. The above mentioned 'predictive' model allows efficient 
+information gathering and subsequent appropriate responses based on the information.
 %end italics mode
 }
 \section{Introduction}
@@ -63,56 +63,55 @@ Such a 'predictive' model allows efficient information gathering and subsequent 
 \label{fig:nwTopo}
 \end{figure}
 
-Consider a typical university network, Figure~\ref{fig:nwTopo}, with interconnected
-residential (resnet), academic and hostel networks. Connection to the Internet is via
-one or many router(s) and proxy server(s). The router(s), running netscout\cite{netscout}, act as vantage points to
-monitor and control network traffic. LDAP logins (Proxy authentication) (if used) can be determined via
-netscout and be used in addition to HOST IP based information gathering to build user/host network activity profile. 
-In order to maximize the efficiency of netscout to present 
-relevant information, the application should run on one or many of the routers(s) to 
-monitor internal and outgoing traffic, via the proxy server. netscout can be employed in a 
-topology wherein traffic from the main router(s) is also directed 
-to another machine (akin to a t-junction) running netscout. netscout, in position now to 
-monitor network traffic can filter, counter 'hostile' traffic and generate user desired 
-reports for further analysis and action.
+Consider a typical university network as shown in, Figure~\ref{fig:nwTopo}. The depicted network
+has interconnected residential (resnet), academic and hostel networks. Connection to the Internet is via
+one or many router(s) and proxy server(s). Also, Proxy authentication via LDAP could be used in order to
+access the Internet service. Though netscout can be run on any kind on network topology, the just described
+topology is used as an example throughout the paper and is very similar to the type in which netscout has been
+tested on.
 
-\section{the netscout advantage}
+The router(s) (nodes running LINUX) have the ability to act as vantage points inorder to monitor and control network traffic.
+netscout \cite{netscout} can be run on the routers to build user/host network activity profile. 
+The system can then either choose to act on the information in real time or transfer the obtained
+information to a secondary part of the system for further analysis and countering.
+
+\section{The netscout Advantage}
 The strength of netscout lies is the ability to employ some 'intelligence' in packet gathering. As LANs
 tend to generate huge amounts of traffic the network data sample should be small but useful. An approach where 
 a sample of network data is gathered, sans any filters, the probability of finding useful information is
 proportional to the data size. A large data size though tends to slow down further processing. For example,
 consider (a) 1000 packets captured and P2P (peer-to-peer) packets looked for in them or (b) looking only for a threshold 
 level of P2P packets. As evident, case (b) is more efficient as the data set captured contains relevant information 
-and also the threshold levels decided by the user allows the user to control the number of P2P hosts he
-intends to discover.  
+and also the threshold levels decided by the administrator allows to control the number of P2P hosts  
+intended to be discovered.  
 
 netscout also tries to obtain a logical picture of the network activity. For example, once netscout has ascertained
-that a host is involved in P2P activity it then tries to (if activated) obtain the proxy user id being used
-from that host. This is done by looking at a couple of http packets. The proxy user component now
-allows netscout to build network profile of a user. 
+that a host is involved in P2P activity it then tries to (if activated) obtain the proxy username being used
+from that host. This is done by looking for HTTP request packets. The proxy username component now
+allows netscout to build network profile of the user. 
 
 Hosts added to netscout's database via static keyword matching techniques (say P2P), slowly form the
 database for the future. For instance, hosts identified as involved in P2P activities are first
-checked for their http traffic. Websites accessed by hosts are stored and classified. The classification
-involves looking at keywords in the website's meta section. If website is found to be
-violating policy then, a further detailed analysis of the host network activity is done in order to 
-ascertain if the host accesses too many policy violating websites. Furthermore, hosts accessing websites classified
-as policy violating are monitored for there network activity. 
+checked for their HTTP traffic. Websites accessed by these hosts are stored and classified. The classification
+involves looking at keywords in the META section of the HTTP response obtained from the website. 
+If website is found to be violating policy then, a further detailed analysis of the host network 
+activity is done in order to ascertain if the host accesses too many policy violating websites. 
+Furthermore, hosts accessing websites classified as policy violating are in future monitored for their network activity. 
 In addition to keyword matching techniques few statistical techniques too are employed for traffic monitoring.
-Parameters such as bandwidth usage and high connections help identify potential network bottlenecks and
+Parameters such as bandwidth usage and high incoming connections help identify potential network bottlenecks and
 possible policy violating traffic.
-In essence, netscout tries to maximize network information in the smallest gathering and processing time.
+In essence, netscout tries to maximize network information by efficiently gathering series of small network data sets.
 
  
-\section{netscout internals}
-netscout is a python based network filtering, monitoring and countering mechanism. The 
+\section{netscout Internals}
+netscout is a python based network filtering, monitoring and threat countering mechanism. The 
 packet gathering is largely done via existing tools such as ngrep\cite{ngrep},tcpdump\cite{tcpdump}
-and tshark\cite{tshark}. The gathered data is then analysed and acted upon based on the network policies
+and tshark\cite{tshark}. The gathered data is then analysed and acted upon based on the network policies,
 laid out in the netscout configuration file, which drive the application. 
 Currently, netscout can monitor and detect:  
 (1) unauthorized  P2P (DC++), (2) policy violating HTTP traffic, (3) MAC address spoofing, 
 (4) heavy bandwidth usage and (5) 'hostile' traffic against important network resources. 
-The information is persisted in a SQLite database for basing future activity monitoring and 
+The information is persisted in a SQLite \cite{sqlite} database for basing future activity monitoring and 
 reporting user/host network activity.
 netscout has five modes of operation: {\bf passive}, {\bf protect}, {\bf counter}, {\bf update} and {\bf report} modes.
 These modes can be activated/deactivated via the following "config" file parameters
@@ -135,10 +134,9 @@ counterMode=false\\
 
 
 \section{Passive Mode}
-The primary data gathering mode of netscout. Here traffic is listened on to specified interface and data
-obtained based on the configuration file. Based on the configuration the kind of traffic requested (eg http,p2p) 
-to be monitored is heard for. Also, statistical parameters like maximum number of connections to, bandwidth
-usage are computed based on the thresholds decided in the configuration. Sample session on netscout invoked in
+The primary data gathering mode of netscout. Here traffic is listened on to a specified interface and data
+obtained based on the configuration file. Also, statistical parameters like maximum number of connections to, bandwidth
+usage are computed based on the thresholds decided in the configuration. Sample session of netscout invoked in
 passive mode on the eth0 interface. 
 
 \fbox{\begin{tabular}{p{7cm}}
@@ -236,7 +234,7 @@ websites that violate policy is assumed to do so in the future too and subsequen
 keep that in mind when filtering traffic. This automated classification also allows now to identify unlisted
 websites and keeping the website access lists updated. 
 
-\section*{MAC spoofing}
+\section*{MAC Spoofing}
 MAC spoofing often forms the backbone of malicious attacks and detecting it can go a long way
 in thwarting potential future attacks. netscout, in each run, captures the MAC address of the active hosts. The MAC
 thus obtained is compared when the host is active again in subsequent runs of netscout.  
@@ -247,7 +245,7 @@ netscout uses the lightweight passive OS fingerprinting expertise of {\bf p0f} \
 violating hosts have been identified, netscout tries to garner more information about them. p0f allows
 an efficient way to learn the OS make of the host allowing better response to threats.   
  
-\section*{Bandwidth usage}
+\section*{Bandwidth Usage}
 Bandwidth usage monitoring goes in a long way to ensure fair and efficient usage of
 network resources. netscout explicitly looks at P2P traffic utilizing protocol information,
 but can also detect traffic bottlenecks. In this case, bandwidth usage of hosts is computed
@@ -364,6 +362,9 @@ Future work includes:
 {\em http://www.wireshark.org}, 2008.
 \bibitem{p0f}
 {\em http://lcamtuf.coredump.cx/p0f.shtml}, 2008.
+\bibitem{sqlite}
+{\em www.sqlite.org/},2008
+
 \end{thebibliography}
 \end{document}
 
